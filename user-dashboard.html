@@ -1,0 +1,3327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard | Stackly Finance</title>
+
+  
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <!-- Chart JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+    <link rel="stylesheet"
+          href="user.css">
+ <link rel="stylesheet" href="loader.css">
+     <link rel="stylesheet" href="cursor.css">
+
+   
+
+</head>
+
+<body>
+
+    <div id="preloader">
+
+    <div class="loader-wrapper">
+
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+
+        <div class="finance-logo">
+
+    <img src="greenlogostackly.png"
+         alt="Stackly Finance Logo"
+         class="loader-logo">
+
+</div>
+
+    </div>
+
+    <h2 class="loader-title">
+        Stackly Finance
+    </h2>
+
+    <p class="loader-text">
+        Securing Your Financial Future...
+    </p>
+
+</div>
+
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+  
+
+<div id="website">
+
+<div class="dashboard-wrapper">
+
+
+
+    <aside class="dashboard-sidebar"
+           id="dashboardSidebar">
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <a href="user-dashboard.html">
+
+                <img src="greenlogostackly.png"
+                     alt="Stackly">
+
+            </a>
+
+        </div>
+
+        <!-- User -->
+
+        <div class="sidebar-user">
+
+            <div class="sidebar-avatar">
+
+                <i class="ri-user-3-line"></i>
+
+            </div>
+
+            <div>
+
+                <h5 id="dashboardRole">
+
+                    User
+
+                </h5>
+
+                <span id="dashboardEmail">
+
+                    user@gmail.com
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Menu -->
+
+        <ul class="sidebar-menu">
+
+            <li class="active">
+
+                <a href="user-dashboard.html">
+
+                    <i class="ri-dashboard-horizontal-line"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-wallet-3-line"></i>
+
+                    Wallet
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-exchange-dollar-line"></i>
+
+                    Transactions
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-bank-card-line"></i>
+
+                    Payments
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-line-chart-line"></i>
+
+                    Analytics
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-funds-line"></i>
+
+                    Investments
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-bar-chart-box-line"></i>
+
+                    Reports
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="error.html">
+
+                    <i class="ri-settings-3-line"></i>
+
+                    Settings
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        
+
+        <div class="sidebar-footer">
+
+            <button id="logoutButton">
+
+                <i class="ri-logout-circle-r-line"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+   
+
+    <div class="sidebar-overlay"
+         id="sidebarOverlay"></div>
+
+
+    <main class="dashboard-main">
+
+
+        <header class="dashboard-navbar">
+
+          <div class="navbar-left">
+
+    <a href="user-dashboard.html" class="mobile-logo">
+
+        <img
+            src="greenlogostackly.png"
+            alt="Stackly Logo">
+
+    </a>
+
+    <button id="sidebarToggle">
+
+        <i class="ri-menu-3-line"></i>
+
+    </button>
+
+    <h4>
+
+        Financial Dashboard
+
+    </h4>
+
+</div>
+
+            <div class="dashboard-search">
+
+                <i class="ri-search-line"></i>
+
+                <input
+                    type="search"
+                    placeholder="Search transactions, reports...">
+
+            </div>
+
+          
+
+           <div class="navbar-right">
+
+    <a href="error.html" class="nav-icon-btn">
+
+        <i class="ri-notification-3-line"></i>
+
+        <span class="badge-dot"></span>
+
+    </a>
+
+    <a href="error.html" class="nav-icon-btn">
+
+        <i class="ri-message-3-line"></i>
+
+        <span class="badge-dot"></span>
+
+    </a>
+
+    <a href="error.html" class="nav-icon-btn">
+
+        <i class="ri-moon-line"></i>
+
+    </a>
+
+    <a href="error.html" class="profile-box">
+
+        <div class="profile-avatar">
+
+            <i class="ri-user-3-line"></i>
+
+        </div>
+
+    </a>
+
+</div>
+
+        </header>
+
+
+        <section class="dashboard-hero">
+
+            <div class="row align-items-center">
+
+           
+
+                <div class="col-lg-7">
+
+                    <div class="hero-content">
+
+                        <span class="hero-badge">
+
+                            <i class="ri-sun-line"></i>
+
+                            Good Morning
+
+                        </span>
+
+                        <h1>
+
+                            Welcome Back,
+
+                            <span id="dashboardUserRole">
+
+                                User
+
+                            </span>
+
+                        </h1>
+
+                        <p>
+
+                            Manage your finances, monitor your income,
+                            analyze expenses and grow your business
+                            with Stackly Finance.
+
+                        </p>
+
+                        <div class="hero-actions">
+
+                            <a href="error.html"
+                               class="hero-primary">
+
+                                <i class="ri-bank-card-line"></i>
+
+                                Send Money
+
+                            </a>
+
+                            <a href="error.html"
+                               class="hero-secondary">
+
+                                <i class="ri-wallet-3-line"></i>
+
+                                My Wallet
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="col-lg-5">
+
+                    <div class="hero-balance-card">
+
+                        <div class="balance-top">
+
+                            <div>
+
+                                <span>
+
+                                    Total Balance
+
+                                </span>
+
+                                <h2 id="balanceCounter">
+
+                                    $0.00
+
+                                </h2>
+
+                            </div>
+
+                            <i class="ri-wallet-3-fill"></i>
+
+                        </div>
+
+                        <div class="balance-bottom">
+
+                            <div>
+
+                                <small>
+
+                                    Monthly Growth
+
+                                </small>
+
+                                <h5>
+
+                                    +18.40%
+
+                                </h5>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+
+                                    Active Cards
+
+                                </small>
+
+                                <h5>
+
+                                    03
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+<section class="dashboard-stats">
+
+    <div class="row g-4">
+
+     
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="stats-card">
+
+                <div class="stats-icon bg-success-subtle">
+
+                    <i class="ri-wallet-3-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Total Balance
+
+                    </span>
+
+                    <h3 id="totalBalanceCounter">
+
+                        $0
+
+                    </h3>
+
+                    <small class="text-success">
+
+                        <i class="ri-arrow-up-line"></i>
+
+                        +12.6% This Month
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="stats-card">
+
+                <div class="stats-icon bg-primary-subtle">
+
+                    <i class="ri-line-chart-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Monthly Income
+
+                    </span>
+
+                    <h3 id="incomeCounter">
+
+                        $0
+
+                    </h3>
+
+                    <small class="text-success">
+
+                        <i class="ri-arrow-up-line"></i>
+
+                        +8.5%
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="stats-card">
+
+                <div class="stats-icon bg-danger-subtle">
+
+                    <i class="ri-money-dollar-circle-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Monthly Expense
+
+                    </span>
+
+                    <h3 id="expenseCounter">
+
+                        $0
+
+                    </h3>
+
+                    <small class="text-danger">
+
+                        <i class="ri-arrow-down-line"></i>
+
+                        4.1%
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="stats-card">
+
+                <div class="stats-icon bg-warning-subtle">
+
+                    <i class="ri-safe-2-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Savings
+
+                    </span>
+
+                    <h3 id="savingCounter">
+
+                        $0
+
+                    </h3>
+
+                    <small class="text-success">
+
+                        <i class="ri-arrow-up-line"></i>
+
+                        +15%
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="dashboard-actions mt-5">
+
+    <div class="row g-4">
+
+    
+        <div class="col-lg-8">
+
+            <div class="action-card">
+
+                <div class="section-title">
+
+                    <h4>
+
+                        Quick Actions
+
+                    </h4>
+
+                </div>
+
+                <div class="action-grid">
+
+                    <a href="error.html">
+
+                        <i class="ri-bank-card-line"></i>
+
+                        <span>
+
+                            Transfer
+
+                        </span>
+
+                    </a>
+
+                    <a href="error.html">
+
+                        <i class="ri-wallet-3-line"></i>
+
+                        <span>
+
+                            Wallet
+
+                        </span>
+
+                    </a>
+
+                    <a href="error.html">
+
+                        <i class="ri-file-chart-line"></i>
+
+                        <span>
+
+                            Reports
+
+                        </span>
+
+                    </a>
+
+                    <a href="error.html">
+
+                        <i class="ri-exchange-dollar-line"></i>
+
+                        <span>
+
+                            Transactions
+
+                        </span>
+
+                    </a>
+
+                    <a href="error.html">
+
+                        <i class="ri-pie-chart-line"></i>
+
+                        <span>
+
+                            Analytics
+
+                        </span>
+
+                    </a>
+
+                    <a href="error.html">
+
+                        <i class="ri-customer-service-2-line"></i>
+
+                        <span>
+
+                            Support
+
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    
+
+        <div class="col-lg-4">
+
+            <div class="ai-card">
+
+                <div class="ai-icon">
+
+                    <i class="ri-robot-2-line"></i>
+
+                </div>
+
+                <h4>
+
+                    AI Finance Insights
+
+                </h4>
+
+                <p>
+
+                    Your spending decreased by
+
+                    <strong>
+
+                        12%
+
+                    </strong>
+
+                    compared to last month.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i class="ri-check-line"></i>
+
+                        Budget Health : Excellent
+
+                    </li>
+
+                    <li>
+
+                        <i class="ri-check-line"></i>
+
+                        Investment Opportunity
+
+                    </li>
+
+                    <li>
+
+                        <i class="ri-check-line"></i>
+
+                        Savings Goal On Track
+
+                    </li>
+
+                </ul>
+
+                <a href="error.html"
+                   class="ai-btn">
+
+                    View Insights
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-analytics mt-5">
+
+<div class="row g-4">
+
+
+
+<div class="col-xl-8">
+
+<div class="chart-card">
+
+<div class="card-header">
+
+<div>
+
+<h4>
+
+Financial Overview
+
+</h4>
+
+<p>
+
+Income vs Expense Analysis
+
+</p>
+
+</div>
+
+<select class="form-select">
+
+<option>
+
+Last 6 Months
+
+</option>
+
+<option>
+
+Last Year
+
+</option>
+
+</select>
+
+</div>
+
+<div class="chart-body">
+
+<canvas id="financeChart">
+
+</canvas>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-xl-4">
+
+<div class="wallet-card">
+
+<div class="wallet-top">
+
+<div>
+
+<span>
+
+Premium Card
+
+</span>
+
+<h4>
+
+Stackly Platinum
+
+</h4>
+
+</div>
+
+<i class="ri-bank-card-fill"></i>
+
+</div>
+
+<div class="wallet-number">
+
+**** **** **** 4582
+
+</div>
+
+<div class="wallet-bottom">
+
+<div>
+
+<small>
+
+Card Holder
+
+</small>
+
+<h6>
+
+John Williams
+
+</h6>
+
+</div>
+
+<div>
+
+<small>
+
+Expires
+
+</small>
+
+<h6>
+
+09 / 30
+
+</h6>
+
+</div>
+
+</div>
+
+<div class="wallet-actions">
+
+<button>
+
+<i class="ri-bank-card-line"></i>
+
+Transfer
+
+</button>
+
+<button>
+
+<i class="ri-add-circle-line"></i>
+
+Top Up
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="dashboard-performance mt-5">
+
+<div class="row g-4">
+
+
+
+<div class="col-lg-4">
+
+<div class="chart-card">
+
+<div class="card-header">
+
+<h4>
+
+Expense Categories
+
+</h4>
+
+</div>
+
+<canvas id="expenseChart">
+
+</canvas>
+
+</div>
+
+</div>
+
+<!-- Monthly -->
+
+<div class="col-lg-8">
+
+<div class="performance-card">
+
+<div class="card-header">
+
+<h4>
+
+Monthly Performance
+
+</h4>
+
+<a href="error.html">
+
+View Report
+
+</a>
+
+</div>
+
+<div class="performance-list">
+
+<div class="performance-item">
+
+<div>
+
+<h6>
+
+Revenue
+
+</h6>
+
+<small>
+
+Monthly Growth
+
+</small>
+
+</div>
+
+<div>
+
+<strong>
+
++18%
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div
+class="progress-bar bg-success"
+style="width:82%">
+
+</div>
+
+</div>
+
+<div class="performance-item">
+
+<div>
+
+<h6>
+
+Savings
+
+</h6>
+
+<small>
+
+Current Goal
+
+</small>
+
+</div>
+
+<div>
+
+<strong>
+
+72%
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div
+class="progress-bar bg-primary"
+style="width:72%">
+
+</div>
+
+</div>
+
+<div class="performance-item">
+
+<div>
+
+<h6>
+
+Investments
+
+</h6>
+
+<small>
+
+Portfolio Growth
+
+</small>
+
+</div>
+
+<div>
+
+<strong>
+
+64%
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div
+class="progress-bar bg-warning"
+style="width:64%">
+
+</div>
+
+</div>
+
+<div class="performance-item">
+
+<div>
+
+<h6>
+
+Budget Usage
+
+</h6>
+
+<small>
+
+This Month
+
+</small>
+
+</div>
+
+<div>
+
+<strong>
+
+58%
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div
+class="progress-bar bg-info"
+style="width:58%">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dashboard-transactions mt-5">
+
+<div class="transaction-card">
+
+
+
+<div class="transaction-header">
+
+<div>
+
+<h4>
+
+Recent Transactions
+
+</h4>
+
+<p>
+
+Track all your recent financial activities.
+
+</p>
+
+</div>
+
+<div class="transaction-tools">
+
+<div class="transaction-search">
+
+<i class="ri-search-line"></i>
+
+<input
+type="search"
+id="transactionSearch"
+placeholder="Search Transaction">
+
+</div>
+
+<select id="transactionFilter"
+class="form-select">
+
+<option value="all">
+
+All
+
+</option>
+
+<option value="completed">
+
+Completed
+
+</option>
+
+<option value="pending">
+
+Pending
+
+</option>
+
+<option value="failed">
+
+Failed
+
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+
+<div class="table-responsive">
+
+<table class="table transaction-table align-middle">
+
+<thead>
+
+<tr>
+
+<th>
+
+Transaction
+
+</th>
+
+<th>
+
+Date
+
+</th>
+
+<th>
+
+Amount
+
+</th>
+
+<th>
+
+Status
+
+</th>
+
+<th>
+
+Action
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody id="transactionTable">
+
+<tr>
+
+<td>
+
+<div class="transaction-user">
+
+<div class="transaction-icon success">
+
+<i class="ri-bank-card-line"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Salary Credit
+
+</h6>
+
+<small>
+
+Bank Transfer
+
+</small>
+
+</div>
+
+</div>
+
+</td>
+
+<td>
+
+25 Jul 2026
+
+</td>
+
+<td class="text-success">
+
++$4,250
+
+</td>
+
+<td>
+
+<span class="status completed">
+
+Completed
+
+</span>
+
+</td>
+
+<td>
+
+<div class="transaction-action">
+
+<button>
+
+<i class="ri-eye-line"></i>
+
+</button>
+
+<button>
+
+<i class="ri-download-2-line"></i>
+
+</button>
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="transaction-user">
+
+<div class="transaction-icon warning">
+
+<i class="ri-shopping-bag-line"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Amazon Purchase
+
+</h6>
+
+<small>
+
+Shopping
+
+</small>
+
+</div>
+
+</div>
+
+</td>
+
+<td>
+
+23 Jul 2026
+
+</td>
+
+<td class="text-danger">
+
+-$320
+
+</td>
+
+<td>
+
+<span class="status pending">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<div class="transaction-action">
+
+<button>
+
+<i class="ri-eye-line"></i>
+
+</button>
+
+<button>
+
+<i class="ri-download-2-line"></i>
+
+</button>
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="transaction-user">
+
+<div class="transaction-icon danger">
+
+<i class="ri-bank-line"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Loan EMI
+
+</h6>
+
+<small>
+
+Auto Debit
+
+</small>
+
+</div>
+
+</div>
+
+</td>
+
+<td>
+
+21 Jul 2026
+
+</td>
+
+<td class="text-danger">
+
+-$890
+
+</td>
+
+<td>
+
+<span class="status failed">
+
+Failed
+
+</span>
+
+</td>
+
+<td>
+
+<div class="transaction-action">
+
+<button>
+
+<i class="ri-eye-line"></i>
+
+</button>
+
+<button>
+
+<i class="ri-download-2-line"></i>
+
+</button>
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="transaction-user">
+
+<div class="transaction-icon info">
+
+<i class="ri-wallet-3-line"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Wallet Top Up
+
+</h6>
+
+<small>
+
+UPI Payment
+
+</small>
+
+</div>
+
+</div>
+
+</td>
+
+<td>
+
+19 Jul 2026
+
+</td>
+
+<td class="text-success">
+
++$520
+
+</td>
+
+<td>
+
+<span class="status completed">
+
+Completed
+
+</span>
+
+</td>
+
+<td>
+
+<div class="transaction-action">
+
+<button>
+
+<i class="ri-eye-line"></i>
+
+</button>
+
+<button>
+
+<i class="ri-download-2-line"></i>
+
+</button>
+
+</div>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dashboard-ai mt-5">
+
+<div class="row g-4">
+
+
+<div class="col-xl-8">
+
+<div class="ai-insight-card">
+
+<div class="card-header">
+
+<div>
+
+<h4>
+
+<i class="ri-robot-2-line"></i>
+
+AI Financial Assistant
+
+</h4>
+
+<p>
+
+Real-time financial recommendations powered by intelligent analytics.
+
+</p>
+
+</div>
+
+<span class="ai-live">
+
+<i class="ri-pulse-line"></i>
+
+Live Analysis
+
+</span>
+
+</div>
+
+<div class="row g-4 mt-2">
+
+<div class="col-md-6">
+
+<div class="ai-box">
+
+<div class="ai-box-icon success">
+
+<i class="ri-funds-line"></i>
+
+</div>
+
+<h5>
+
+Investment Opportunity
+
+</h5>
+
+<p>
+
+Your portfolio can increase by approximately
+
+<strong>
+
+12.8%
+
+</strong>
+
+with balanced investments.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="ai-box">
+
+<div class="ai-box-icon warning">
+
+<i class="ri-safe-2-line"></i>
+
+</div>
+
+<h5>
+
+Savings Prediction
+
+</h5>
+
+<p>
+
+Maintain your current budget to reach your savings goal
+
+<strong>
+
+18 days earlier.
+
+</strong>
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="ai-box">
+
+<div class="ai-box-icon primary">
+
+<i class="ri-line-chart-line"></i>
+
+</div>
+
+<h5>
+
+Expense Trend
+
+</h5>
+
+<p>
+
+Food and entertainment spending increased
+
+<strong>
+
+8%
+
+</strong>
+
+this month.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="ai-box">
+
+<div class="ai-box-icon danger">
+
+<i class="ri-error-warning-line"></i>
+
+</div>
+
+<h5>
+
+Risk Alert
+
+</h5>
+
+<p>
+
+Avoid unnecessary subscriptions to improve monthly cash flow.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-4">
+
+<div class="health-card">
+
+<div class="health-score">
+
+<h2 id="healthCounter">
+
+95%
+
+</h2>
+
+<span>
+
+Financial Health
+
+</span>
+
+</div>
+
+<div class="health-progress">
+
+<div class="progress mb-3">
+
+<div
+class="progress-bar bg-success"
+style="width:95%">
+
+</div>
+
+</div>
+
+</div>
+
+<ul class="health-list">
+
+<li>
+
+<i class="ri-checkbox-circle-fill text-success"></i>
+
+Budget Planning
+
+</li>
+
+<li>
+
+<i class="ri-checkbox-circle-fill text-success"></i>
+
+Savings Target
+
+</li>
+
+<li>
+
+<i class="ri-checkbox-circle-fill text-success"></i>
+
+Credit Score
+
+</li>
+
+<li>
+
+<i class="ri-checkbox-circle-fill text-success"></i>
+
+Investment Growth
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dashboard-goals mt-5">
+
+<div class="card goals-card">
+
+<div class="card-header">
+
+<h4>
+
+Financial Goals
+
+</h4>
+
+<a href="error.html">
+
+View All
+
+</a>
+
+</div>
+
+<div class="goal-item">
+
+<div>
+
+<h6>
+
+Emergency Fund
+
+</h6>
+
+<small>
+
+$12,500 / $15,000
+
+</small>
+
+</div>
+
+<strong>
+
+83%
+
+</strong>
+
+</div>
+
+<div class="progress mb-4">
+
+<div
+class="progress-bar bg-success"
+style="width:83%">
+
+</div>
+
+</div>
+
+<div class="goal-item">
+
+<div>
+
+<h6>
+
+Home Investment
+
+</h6>
+
+<small>
+
+$45,000 / $80,000
+
+</small>
+
+</div>
+
+<strong>
+
+56%
+
+</strong>
+
+</div>
+
+<div class="progress mb-4">
+
+<div
+class="progress-bar bg-primary"
+style="width:56%">
+
+</div>
+
+</div>
+
+<div class="goal-item">
+
+<div>
+
+<h6>
+
+Retirement Fund
+
+</h6>
+
+<small>
+
+$78,000 / $100,000
+
+</small>
+
+</div>
+
+<strong>
+
+78%
+
+</strong>
+
+</div>
+
+<div class="progress">
+
+<div
+class="progress-bar bg-warning"
+style="width:78%">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="dashboard-investment mt-5">
+
+    <div class="row g-4">
+
+        
+
+        <div class="col-xl-7">
+
+            <div class="investment-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h4>
+
+                            Investment Portfolio
+
+                        </h4>
+
+                        <p>
+
+                            Monitor your investment performance in real time.
+
+                        </p>
+
+                    </div>
+
+                    <a href="error.html">
+
+                        View Portfolio
+
+                    </a>
+
+                </div>
+
+             
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-left">
+
+                        <div class="portfolio-icon bg-success-subtle">
+
+                            <i class="ri-funds-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+
+                                Mutual Funds
+
+                            </h6>
+
+                            <small>
+
+                                Long Term Growth
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-right">
+
+                        <h6>
+
+                            $24,580
+
+                        </h6>
+
+                        <span class="text-success">
+
+                            +18.5%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-left">
+
+                        <div class="portfolio-icon bg-warning-subtle">
+
+                            <i class="ri-stock-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+
+                                Stocks
+
+                            </h6>
+
+                            <small>
+
+                                Equity Portfolio
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-right">
+
+                        <h6>
+
+                            $18,240
+
+                        </h6>
+
+                        <span class="text-success">
+
+                            +9.8%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-left">
+
+                        <div class="portfolio-icon bg-info-subtle">
+
+                            <i class="ri-bit-coin-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+
+                                Crypto Assets
+
+                            </h6>
+
+                            <small>
+
+                                Digital Currency
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-right">
+
+                        <h6>
+
+                            $8,950
+
+                        </h6>
+
+                        <span class="text-danger">
+
+                            -2.4%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-left">
+
+                        <div class="portfolio-icon bg-primary-subtle">
+
+                            <i class="ri-building-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+
+                                Real Estate
+
+                            </h6>
+
+                            <small>
+
+                                Property Investment
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-right">
+
+                        <h6>
+
+                            $56,800
+
+                        </h6>
+
+                        <span class="text-success">
+
+                            +6.2%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-xl-5">
+
+            <div class="bill-card">
+
+                <div class="card-header">
+
+                    <h4>
+
+                        Upcoming Bills
+
+                    </h4>
+
+                    <a href="error.html">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div class="bill-item">
+
+                    <div class="bill-icon">
+
+                        <i class="ri-home-4-line"></i>
+
+                    </div>
+
+                    <div class="bill-content">
+
+                        <h6>
+
+                            Home Loan EMI
+
+                        </h6>
+
+                        <small>
+
+                            Due in 2 Days
+
+                        </small>
+
+                    </div>
+
+                    <div class="bill-action">
+
+                        <strong>
+
+                            $850
+
+                        </strong>
+
+                        <a href="error.html">
+
+                            Pay Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="bill-item">
+
+                    <div class="bill-icon">
+
+                        <i class="ri-wifi-line"></i>
+
+                    </div>
+
+                    <div class="bill-content">
+
+                        <h6>
+
+                            Internet Bill
+
+                        </h6>
+
+                        <small>
+
+                            Due in 5 Days
+
+                        </small>
+
+                    </div>
+
+                    <div class="bill-action">
+
+                        <strong>
+
+                            $70
+
+                        </strong>
+
+                        <a href="error.html">
+
+                            Pay Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="bill-item">
+
+                    <div class="bill-icon">
+
+                        <i class="ri-lightbulb-line"></i>
+
+                    </div>
+
+                    <div class="bill-content">
+
+                        <h6>
+
+                            Electricity Bill
+
+                        </h6>
+
+                        <small>
+
+                            Due in 7 Days
+
+                        </small>
+
+                    </div>
+
+                    <div class="bill-action">
+
+                        <strong>
+
+                            $125
+
+                        </strong>
+
+                        <a href="error.html">
+
+                            Pay Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="bill-item">
+
+                    <div class="bill-icon">
+
+                        <i class="ri-netflix-line"></i>
+
+                    </div>
+
+                    <div class="bill-content">
+
+                        <h6>
+
+                            Netflix Premium
+
+                        </h6>
+
+                        <small>
+
+                            Due Tomorrow
+
+                        </small>
+
+                    </div>
+
+                    <div class="bill-action">
+
+                        <strong>
+
+                            $19
+
+                        </strong>
+
+                        <a href="error.html">
+
+                            Pay Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-bottom mt-5">
+
+<div class="row g-4">
+
+
+<div class="col-xl-7">
+
+<div class="activity-card">
+
+<div class="card-header">
+
+<h4>
+
+Recent Activity
+
+</h4>
+
+<a href="error.html">
+
+View All
+
+</a>
+
+</div>
+
+<div class="activity-list">
+
+<div class="activity-item">
+
+<div class="activity-icon success">
+
+<i class="ri-bank-card-line"></i>
+
+</div>
+
+<div class="activity-content">
+
+<h6>
+
+Money Transferred
+
+</h6>
+
+<p>
+
+Successfully transferred
+
+<strong>
+
+$2,500
+
+</strong>
+
+to Alex Johnson.
+
+</p>
+
+<small>
+
+5 Minutes Ago
+
+</small>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon primary">
+
+<i class="ri-wallet-3-line"></i>
+
+</div>
+
+<div class="activity-content">
+
+<h6>
+
+Wallet Top Up
+
+</h6>
+
+<p>
+
+Wallet balance increased by
+
+<strong>
+
+$500
+
+</strong>
+
+using UPI.
+
+</p>
+
+<small>
+
+30 Minutes Ago
+
+</small>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon warning">
+
+<i class="ri-shopping-bag-line"></i>
+
+</div>
+
+<div class="activity-content">
+
+<h6>
+
+Shopping Payment
+
+</h6>
+
+<p>
+
+Payment completed at
+
+<strong>
+
+Amazon
+
+</strong>
+
+for $320.
+
+</p>
+
+<small>
+
+Yesterday
+
+</small>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon danger">
+
+<i class="ri-safe-2-line"></i>
+
+</div>
+
+<div class="activity-content">
+
+<h6>
+
+Savings Updated
+
+</h6>
+
+<p>
+
+Monthly savings goal reached
+
+<strong>
+
+83%
+
+</strong>
+
+completion.
+
+</p>
+
+<small>
+
+2 Days Ago
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-xl-5">
+
+<div class="notification-card">
+
+<div class="card-header">
+
+<h4>
+
+Notifications
+
+</h4>
+
+<span class="notification-count">
+
+04 New
+
+</span>
+
+</div>
+
+<div class="notification-item">
+
+<div class="notification-icon success">
+
+<i class="ri-checkbox-circle-fill"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Payment Successful
+
+</h6>
+
+<p>
+
+Your electricity bill has been paid.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="notification-item">
+
+<div class="notification-icon warning">
+
+<i class="ri-error-warning-fill"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Upcoming EMI
+
+</h6>
+
+<p>
+
+Your home loan EMI is due in 2 days.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="notification-item">
+
+<div class="notification-icon primary">
+
+<i class="ri-line-chart-fill"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+Investment Increased
+
+</h6>
+
+<p>
+
+Portfolio value increased by 6%.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="notification-item">
+
+<div class="notification-icon info">
+
+<i class="ri-bank-card-fill"></i>
+
+</div>
+
+<div>
+
+<h6>
+
+New Credit Card Offer
+
+</h6>
+
+<p>
+
+Exclusive cashback offer available.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="dashboard-footer mt-5">
+
+<div class="d-flex flex-wrap justify-content-between align-items-center">
+
+<p>
+
+&copy; 2026 Stackly Finance.
+
+All Rights Reserved.
+
+</p>
+
+<div class="footer-links">
+
+<a href="error.html">
+
+Privacy Policy
+
+</a>
+
+<a href="error.html">
+
+Terms
+
+</a>
+
+<a href="contact.html">
+
+Support
+
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+</main>
+
+</div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+
+
+
+
+<script>
+
+
+const sidebar = document.getElementById("dashboardSidebar");
+
+const sidebarToggle = document.getElementById("sidebarToggle");
+
+const overlay = document.getElementById("sidebarOverlay");
+
+function openSidebar() {
+
+    sidebar.classList.add("active");
+
+    overlay.classList.add("active");
+
+    document.body.classList.add("sidebar-open");
+
+}
+
+function closeSidebar() {
+
+    sidebar.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("sidebar-open");
+
+}
+
+sidebarToggle.addEventListener("click", openSidebar);
+
+overlay.addEventListener("click", closeSidebar);
+document.querySelectorAll(".sidebar-menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        if (window.innerWidth <= 992) {
+
+            closeSidebar();
+
+        }
+
+    });
+
+});
+sidebar.addEventListener("click", function (e) {
+
+    e.stopPropagation();
+
+});
+
+const dashboardEmail =
+document.getElementById("dashboardEmail");
+
+const dashboardRole =
+document.getElementById("dashboardRole");
+
+const dashboardUserRole =
+document.getElementById("dashboardUserRole");
+
+const userEmail =
+localStorage.getItem("userEmail");
+
+const userRole =
+localStorage.getItem("userRole");
+
+if(!userEmail){
+
+window.location.href="login.html";
+
+}
+
+dashboardEmail.textContent=userEmail;
+
+dashboardRole.textContent=
+
+userRole.charAt(0).toUpperCase()+
+
+userRole.slice(1);
+
+dashboardUserRole.textContent=
+
+userRole.charAt(0).toUpperCase()+
+
+userRole.slice(1);
+
+
+const logoutButton =
+document.getElementById("logoutButton");
+
+logoutButton.addEventListener("click",()=>{
+
+const confirmLogout=
+
+confirm("Are you sure you want to logout?");
+
+if(confirmLogout){
+
+localStorage.clear();
+
+window.location.href="login.html";
+
+}
+
+});
+
+
+function animateCounter(id,end,prefix){
+
+const element=document.getElementById(id);
+
+let start=0;
+
+const duration=1800;
+
+const step=Math.ceil(end/80);
+
+const timer=setInterval(()=>{
+
+start+=step;
+
+if(start>=end){
+
+start=end;
+
+clearInterval(timer);
+
+}
+
+element.innerHTML=
+
+prefix+
+
+start.toLocaleString();
+
+},duration/80);
+
+}
+
+animateCounter(
+
+"balanceCounter",
+
+54820,
+
+"$"
+
+);
+
+animateCounter(
+
+"totalBalanceCounter",
+
+54820,
+
+"$"
+
+);
+
+animateCounter(
+
+"incomeCounter",
+
+18540,
+
+"$"
+
+);
+
+animateCounter(
+
+"expenseCounter",
+
+8240,
+
+"$"
+
+);
+
+animateCounter(
+
+"savingCounter",
+
+24100,
+
+"$"
+
+);
+
+
+const menuLinks=
+
+document.querySelectorAll(
+
+".sidebar-menu li"
+
+);
+
+menuLinks.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+menuLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+});
+
+item.classList.add("active");
+
+});
+
+});
+
+
+const badge=
+
+document.querySelector(
+
+".hero-badge"
+
+);
+
+const hour=
+
+new Date().getHours();
+
+if(hour<12){
+
+badge.innerHTML=
+
+'<i class="ri-sun-line"></i> Good Morning';
+
+}
+
+else if(hour<17){
+
+badge.innerHTML=
+
+'<i class="ri-sun-cloudy-line"></i> Good Afternoon';
+
+}
+
+else{
+
+badge.innerHTML=
+
+'<i class="ri-moon-clear-line"></i> Good Evening';
+
+}
+
+document.querySelectorAll("a").forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+const target=
+
+this.getAttribute("href");
+
+if(target.startsWith("#")){
+
+e.preventDefault();
+
+document.querySelector(target)
+
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+});
+
+});
+
+
+const financeCanvas = document.getElementById("financeChart");
+
+if (financeCanvas) {
+
+    new Chart(financeCanvas, {
+
+        type: "line",
+
+        data: {
+
+            labels: [
+
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun"
+
+            ],
+
+            datasets: [
+
+                {
+
+                    label: "Income",
+
+                    data: [
+
+                        12000,
+                        18000,
+                        16000,
+                        22000,
+                        25000,
+                        28000
+
+                    ],
+
+                    borderColor: "#16a34a",
+
+                    backgroundColor: "rgba(22,163,74,0.12)",
+
+                    fill: true,
+
+                    borderWidth: 3,
+
+                    tension: 0.4,
+
+                    pointRadius: 5,
+
+                    pointHoverRadius: 8
+
+                },
+
+                {
+
+                    label: "Expense",
+
+                    data: [
+
+                        9000,
+                        12000,
+                        11000,
+                        15000,
+                        18000,
+                        20000
+
+                    ],
+
+                    borderColor: "#3b82f6",
+
+                    backgroundColor: "rgba(59,130,246,.10)",
+
+                    fill: true,
+
+                    borderWidth: 3,
+
+                    tension: 0.4,
+
+                    pointRadius: 5,
+
+                    pointHoverRadius: 8
+
+                }
+
+            ]
+
+        },
+
+        options: {
+
+            responsive: true,
+
+            maintainAspectRatio: false,
+
+            plugins: {
+
+                legend: {
+
+                    position: "top"
+
+                }
+
+            },
+
+            scales: {
+
+                y: {
+
+                    beginAtZero: true,
+
+                    grid: {
+
+                        color: "#edf2f7"
+
+                    }
+
+                },
+
+                x: {
+
+                    grid: {
+
+                        display: false
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    });
+
+}
+
+const expenseCanvas = document.getElementById("expenseChart");
+
+if (expenseCanvas) {
+
+    new Chart(expenseCanvas, {
+
+        type: "doughnut",
+
+        data: {
+
+            labels: [
+
+                "Shopping",
+
+                "Food",
+
+                "Travel",
+
+                "Bills",
+
+                "Others"
+
+            ],
+
+            datasets: [
+
+                {
+
+                    data: [
+
+                        35,
+
+                        20,
+
+                        15,
+
+                        18,
+
+                        12
+
+                    ],
+
+                    backgroundColor: [
+
+                        "#16a34a",
+
+                        "#3b82f6",
+
+                        "#f59e0b",
+
+                        "#ef4444",
+
+                        "#8b5cf6"
+
+                    ],
+
+                    borderWidth: 0,
+
+                    hoverOffset: 12
+
+                }
+
+            ]
+
+        },
+
+        options: {
+
+            responsive: true,
+
+            maintainAspectRatio: false,
+
+            cutout: "70%",
+
+            plugins: {
+
+                legend: {
+
+                    position: "bottom"
+
+                }
+
+            }
+
+        }
+
+    });
+
+}
+</script>
+
+</body>
+
+</html>

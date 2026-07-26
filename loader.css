@@ -1,0 +1,313 @@
+
+
+#preloader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+background:
+radial-gradient(circle at top,#22c55e22,transparent 40%),
+linear-gradient(135deg,#06130d,#0b1f17,#112d22);
+
+z-index:999999;
+
+overflow:hidden;
+
+transition:1s;
+
+}
+
+
+
+.loader-wrapper{
+
+position:relative;
+
+width:220px;
+height:220px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+transform-style:preserve-3d;
+
+perspective:1200px;
+
+}
+
+
+
+.ring{
+
+position:absolute;
+
+border-radius:50%;
+
+border:3px solid transparent;
+
+animation:rotate 4s linear infinite;
+
+}
+
+.ring1{
+
+width:180px;
+height:180px;
+
+border-top:4px solid #22c55e;
+border-left:4px solid #16a34a;
+
+filter:drop-shadow(0 0 15px #22c55e);
+
+}
+
+.ring2{
+
+width:140px;
+height:140px;
+
+animation-direction:reverse;
+
+border-right:4px solid #4ade80;
+border-bottom:4px solid #16a34a;
+
+filter:drop-shadow(0 0 20px #22c55e);
+
+}
+
+.ring3{
+
+width:100px;
+height:100px;
+
+animation-duration:2s;
+
+border-top:4px solid #ffffff;
+
+}
+
+
+
+.finance-icon{
+
+width:90px;
+height:90px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border:2px solid rgba(255,255,255,.15);
+
+box-shadow:
+
+0 0 25px rgba(34,197,94,.35),
+0 0 60px rgba(34,197,94,.15);
+
+animation:float 2.5s ease-in-out infinite;
+
+}
+
+.finance-icon i{
+
+font-size:48px;
+
+color:#22c55e;
+
+text-shadow:0 0 20px #22c55e;
+
+}
+
+
+.loader-title{
+
+margin-top:40px;
+
+font-size:34px;
+
+font-weight:700;
+
+color:#fff;
+
+letter-spacing:1px;
+
+}
+
+.loader-text{
+
+margin-top:12px;
+
+color:#cbd5e1;
+
+font-size:16px;
+
+letter-spacing:3px;
+
+}
+
+
+
+@keyframes rotate{
+
+0%{
+
+transform:rotateX(70deg) rotateZ(0deg);
+
+}
+
+100%{
+
+transform:rotateX(70deg) rotateZ(360deg);
+
+}
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+
+
+.preloader-hide{
+
+opacity:0;
+
+visibility:hidden;
+
+pointer-events:none;
+
+}
+
+#website{
+
+opacity:0;
+
+visibility:hidden;
+
+transition:opacity 1.2s ease;
+
+}
+
+#website.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+
+#preloader.hide{
+
+opacity:0;
+
+visibility:hidden;
+
+pointer-events:none;
+
+transition:1s;
+
+}
+
+
+
+body.loading{
+
+overflow:hidden;
+
+height:100vh;
+
+}
+
+
+.finance-logo{
+
+    width:100px;
+    height:100px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:50%;
+
+    border:2px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 0 25px rgba(34,197,94,.35),
+        0 0 60px rgba(34,197,94,.15);
+
+    animation:logoFloat 2.5s ease-in-out infinite;
+
+    overflow:hidden;
+
+}
+
+.loader-logo{
+
+    width:95px;
+    height:95px;
+
+    object-fit:contain;
+
+    animation:logoRotate 6s linear infinite;
+}
+
+@keyframes logoFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}
+
+@keyframes logoRotate{
+
+    from{
+        transform:rotateY(0deg);
+    }
+
+    to{
+        transform:rotateY(360deg);
+    }
+
+}

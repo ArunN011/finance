@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Finance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="loader.css">
+     <link rel="stylesheet" href="cursor.css">
+</head>
+<body>
+    <div id="preloader">
+
+    <div class="loader-wrapper">
+
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+
+        <div class="finance-logo">
+
+    <img src="greenlogostackly.png"
+         alt="Stackly Finance Logo"
+         class="loader-logo">
+
+</div>
+
+    </div>
+
+    <h2 class="loader-title">
+        Stackly Finance
+    </h2>
+
+    <p class="loader-text">
+        Securing Your Financial Future...
+    </p>
+
+</div>
+
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+  
+
+<div id="website">
+
+<section class="signup-section">
+
+    <div class="signup-grid"></div>
+
+    <div class="signup-glow"></div>
+
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center min-vh-100">
+
+            <div class="col-xl-6 col-lg-7 col-md-9">
+
+                <div class="signup-card">
+
+                 
+
+                    <a href="index.html" class="back-home">
+
+                        <i class="ri-arrow-left-line"></i>
+
+                        Back To Home
+
+                    </a>
+
+                    
+
+                    <div class="signup-logo">
+
+                        <img src="greenlogostackly.png"
+                             alt="Stackly">
+
+                    </div>
+
+                    
+
+                    <div class="signup-heading">
+
+                        <h2>
+
+                            Create Account
+
+                        </h2>
+
+                        <p>
+
+                            Join Stackly Finance and start managing
+                            your business smarter.
+
+                        </p>
+
+                    </div>
+
+                  
+
+                    <div class="role-selector">
+
+                        <button
+                            type="button"
+                            class="role-btn active"
+                            data-role="user">
+
+                            <i class="ri-user-3-line"></i>
+
+                            User
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="role-btn"
+                            data-role="admin">
+
+                            <i class="ri-shield-user-line"></i>
+
+                            Admin
+
+                        </button>
+
+                    </div>
+
+
+                    <form id="signupForm">
+
+                    
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="ri-user-line"></i>
+
+                                <input
+                                    type="text"
+                                    id="signupName"
+                                    class="form-control"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="form-group mt-3">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="ri-mail-line"></i>
+
+                                <input
+                                    type="email"
+                                    id="signupEmail"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-3">
+
+                            <!-- Phone -->
+
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+
+                                    <label>
+
+                                        Phone Number
+
+                                    </label>
+
+                                    <div class="input-box">
+
+                                        <i class="ri-phone-line"></i>
+
+                                        <input
+                                            type="tel"
+                                            id="signupPhone"
+                                            class="form-control"
+                                            placeholder="Phone Number"
+                                            required>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+
+                                    <label>
+
+                                        Company
+
+                                    </label>
+
+                                    <div class="input-box">
+
+                                        <i class="ri-building-line"></i>
+
+                                        <input
+                                            type="text"
+                                            id="signupCompany"
+                                            class="form-control"
+                                            placeholder="Company Name"
+                                            required>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                       
+
+                        <div class="form-group mt-3">
+
+                            <label>
+
+                                Password
+
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="ri-lock-password-line"></i>
+
+                                <input
+                                    type="password"
+                                    id="signupPassword"
+                                    class="form-control"
+                                    placeholder="Create Password"
+                                    required>
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="togglePassword">
+
+                                    <i class="ri-eye-line"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                      
+<div class="form-group mt-3">
+
+    <label>
+
+        Confirm Password
+
+    </label>
+
+    <div class="input-box">
+
+        <i class="ri-lock-password-line"></i>
+
+        <input
+            type="password"
+            id="confirmPassword"
+            class="form-control"
+            placeholder="Confirm Password"
+            required>
+
+        <button
+            type="button"
+            class="password-toggle"
+            id="toggleConfirmPassword">
+
+            <i class="ri-eye-line"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+                      
+
+                        <div class="signup-options">
+
+                            <label>
+
+                                <input
+                                    type="checkbox"
+                                    id="acceptTerms"
+                                    required>
+
+                                I agree to the
+
+                                <a href="error.html">
+
+                                    Terms & Conditions
+
+                                </a>
+
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="signup-btn"
+                            id="signupButton">
+
+                            <span class="signup-text">
+
+                                Create Account
+
+                            </span>
+
+                            <span class="signup-loader">
+
+                                <i class="ri-loader-4-line"></i>
+
+                                <span>
+
+                                    Creating...
+
+                                </span>
+
+                            </span>
+
+                        </button>
+
+                    </form>
+
+                  
+                    <div class="signup-footer">
+
+                        <p>
+
+                            Already have an account?
+
+                            <a href="login.html">
+
+                                Login
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+<script>
+   
+const signupForm =
+document.getElementById("signupForm");
+
+const signupButton =
+document.getElementById("signupButton");
+
+const signupName =
+document.getElementById("signupName");
+
+const signupEmail =
+document.getElementById("signupEmail");
+
+const signupPhone =
+document.getElementById("signupPhone");
+
+const signupCompany =
+document.getElementById("signupCompany");
+
+const signupPassword =
+document.getElementById("signupPassword");
+
+const confirmPassword =
+document.getElementById("confirmPassword");
+
+const acceptTerms =
+document.getElementById("acceptTerms");
+
+const togglePassword =
+document.getElementById("togglePassword");
+
+const togglePasswordIcon =
+togglePassword.querySelector("i");
+
+const roleButtons =
+document.querySelectorAll(".role-btn");
+
+let selectedSignupRole = "user";
+
+togglePassword.addEventListener("click",()=>{
+
+    const icon =
+    togglePassword.querySelector("i");
+
+    if(signupPassword.type==="password"){
+
+        signupPassword.type="text";
+
+        icon.className="ri-eye-off-line";
+
+    }
+
+    else{
+
+        signupPassword.type="password";
+
+        icon.className="ri-eye-line";
+
+    }
+
+});
+
+
+
+toggleConfirmPassword.addEventListener("click",()=>{
+
+    const icon =
+    toggleConfirmPassword.querySelector("i");
+
+    if(confirmPassword.type==="password"){
+
+        confirmPassword.type="text";
+
+        icon.className="ri-eye-off-line";
+
+    }
+
+    else{
+
+        confirmPassword.type="password";
+
+        icon.className="ri-eye-line";
+
+    }
+
+});
+
+
+roleButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+roleButtons.forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+button.classList.add("active");
+
+selectedSignupRole =
+button.dataset.role;
+
+});
+
+});
+
+
+function validateSignup(){
+
+const emailPattern =
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const phonePattern =
+/^[0-9]{10,15}$/;
+
+if(signupName.value.trim()===""){
+
+alert("Please enter your Full Name.");
+
+signupName.focus();
+
+return false;
+
+}
+
+if(!emailPattern.test(signupEmail.value.trim())){
+
+alert("Please enter a valid Email Address.");
+
+signupEmail.focus();
+
+return false;
+
+}
+
+if(!phonePattern.test(signupPhone.value.trim())){
+
+alert("Please enter a valid Phone Number.");
+
+signupPhone.focus();
+
+return false;
+
+}
+
+if(signupCompany.value.trim()===""){
+
+alert("Please enter your Company Name.");
+
+signupCompany.focus();
+
+return false;
+
+}
+
+if(signupPassword.value.length<8){
+
+alert("Password must contain at least 8 characters.");
+
+signupPassword.focus();
+
+return false;
+
+}
+
+if(signupPassword.value!==confirmPassword.value){
+
+alert("Passwords do not match.");
+
+confirmPassword.focus();
+
+return false;
+
+}
+
+if(!acceptTerms.checked){
+
+alert("Please accept the Terms & Conditions.");
+
+return false;
+
+}
+
+return true;
+
+}
+
+
+signupForm.addEventListener("submit",(event)=>{
+
+event.preventDefault();
+
+if(!validateSignup()){
+
+return;
+
+}
+
+
+signupForm.addEventListener("submit",(event)=>{
+
+    event.preventDefault();
+
+    if(!validateSignup()){
+
+        return;
+
+    }
+
+    signupButton.classList.add("loading");
+
+    signupButton.disabled = true;
+
+    setTimeout(()=>{
+
+        signupButton.classList.remove("loading");
+
+        signupButton.disabled = false;
+
+        signupForm.reset();
+
+        window.location.href = "login.html";
+
+    },2000);
+
+});
+});
+
+</script>
+
+</body>
+</html>

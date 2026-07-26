@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Stackly Finance | Admin Dashboard
+
+    </title>
+
+   
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+  
+
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet">
+
+
+    <link
+        rel="stylesheet"
+        href="admin.css">
+
+     <link rel="stylesheet" href="loader.css">
+     <link rel="stylesheet" href="cursor.css">
+
+
+</head>
+
+<body>
+    <div id="preloader">
+
+    <div class="loader-wrapper">
+
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+
+        <div class="finance-logo">
+
+    <img src="greenlogostackly.png"
+         alt="Stackly Finance Logo"
+         class="loader-logo">
+
+</div>
+
+    </div>
+
+    <h2 class="loader-title">
+        Stackly Finance
+    </h2>
+
+    <p class="loader-text">
+        Securing Your Financial Future...
+    </p>
+
+</div>
+
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+  
+
+<div id="website">
+
+   
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay">
+
+    </div>
+
+  
+
+    <div class="dashboard-wrapper">
+
+
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar">
+
+          
+
+            <div class="sidebar-logo">
+
+                <a href="admin-dashboard.html">
+
+                    <img
+                        src="greenlogostackly.png"
+                        alt="Stackly Logo">
+
+                </a>
+
+            </div>
+
+     
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-avatar">
+
+                    <i class="ri-user-settings-line"></i>
+
+                </div>
+
+                <div>
+
+                    <h5 id="dashboardRole">
+
+                        Admin
+
+                    </h5>
+
+                    <span id="dashboardEmail">
+
+                        admin@stackly.com
+
+                    </span>
+
+                </div>
+
+            </div>
+
+       
+
+            <ul class="sidebar-menu">
+
+                <li class="active">
+
+                    <a href="admin-dashboard.html">
+
+                        <i class="ri-dashboard-line"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-group-line"></i>
+
+                        User Management
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-exchange-dollar-line"></i>
+
+                        Transactions
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-bank-card-line"></i>
+
+                        Accounts
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-secure-payment-line"></i>
+
+                        Payments
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-bar-chart-box-line"></i>
+
+                        Analytics
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-file-chart-line"></i>
+
+                        Reports
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-settings-3-line"></i>
+
+                        Settings
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <div class="sidebar-footer">
+
+                <button id="logoutButton">
+
+                    <i class="ri-logout-circle-r-line"></i>
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+       
+
+        <main class="dashboard-main">
+
+           
+
+            <nav class="dashboard-navbar">
+
+                <div class="navbar-left">
+
+                  
+
+                    <a
+                        href="admin-dashboard.html"
+                        class="mobile-logo">
+
+                        <img
+                            src="greenlogostackly.png"
+                            alt="Stackly Logo">
+
+                    </a>
+
+                
+
+                    <button id="sidebarToggle">
+
+                        <i class="ri-menu-3-line"></i>
+
+                    </button>
+
+                    
+
+                </div>
+
+           
+
+                <div class="dashboard-search">
+
+                    <i class="ri-search-line"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search users, reports, transactions...">
+
+                </div>
+
+
+                <div class="navbar-right">
+
+                    <a
+                        href="error.html"
+                        class="nav-icon-btn">
+
+                        <i class="ri-notification-3-line"></i>
+
+                        <span class="badge-dot"></span>
+
+                    </a>
+
+                    <a
+                        href="error.html"
+                        class="nav-icon-btn">
+
+                        <i class="ri-message-3-line"></i>
+
+                        <span class="badge-dot"></span>
+
+                    </a>
+
+                    <a
+                        href="error.html"
+                        class="nav-icon-btn">
+
+                        <i class="ri-moon-line"></i>
+
+                    </a>
+
+                    <a
+                        href="error.html"
+                        class="profile-box">
+
+                        <div class="profile-avatar">
+
+                            <i class="ri-user-3-line"></i>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+<section class="dashboard-hero">
+
+    <div class="row align-items-center gy-4">
+
+     
+        <div class="col-lg-7">
+
+            <div
+                class="hero-content"
+                data-aos="fade-right">
+
+                <span class="hero-badge">
+
+                    <i class="ri-shield-star-line"></i>
+
+                    Administrator Panel
+
+                </span>
+
+                <h1>
+
+                    Good Morning,
+
+                    <span>
+
+                        Admin
+
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Manage users, monitor transactions,
+                    generate reports, oversee payments,
+                    and analyze your business performance
+                    from one centralized dashboard.
+
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        href="error.html"
+                        class="hero-primary">
+
+                        <i class="ri-group-line"></i>
+
+                        Manage Users
+
+                    </a>
+
+                    <a
+                        href="error.html"
+                        class="hero-secondary">
+
+                        <i class="ri-file-chart-line"></i>
+
+                        Generate Report
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+            <div
+                class="hero-balance-card"
+                data-aos="fade-left">
+
+                <div class="balance-top">
+
+                    <div>
+
+                        <span>
+
+                            Total Revenue
+
+                        </span>
+
+                        <h2 id="balanceCounter">
+
+                            $1,284,520
+
+                        </h2>
+
+                    </div>
+
+                    <i class="ri-bank-card-fill"></i>
+
+                </div>
+
+                <div class="wallet-number">
+
+                    **** **** **** 8754
+
+                </div>
+
+                <div class="balance-bottom">
+
+                    <div>
+
+                        <small>
+
+                            Monthly Growth
+
+                        </small>
+
+                        <h5>
+
+                            +24.80%
+
+                        </h5>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+
+                            Active Users
+
+                        </small>
+
+                        <h5>
+
+                            12,548
+
+                        </h5>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+
+                            Status
+
+                        </small>
+
+                        <h5>
+
+                            Online
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="dashboard-stats">
+
+    <div class="row g-4">
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <div
+                class="stats-card"
+                data-aos="fade-up">
+
+                <div
+                    class="stats-icon"
+                    style="background:#dcfce7;">
+
+                    <i class="ri-money-dollar-circle-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Total Revenue
+
+                    </span>
+
+                    <h3 id="revenueCounter">
+
+                        $0
+
+                    </h3>
+
+                    <small class="text-success">
+
+                        ↑ 18.4% This Month
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    
+
+        <div class="col-xl-3 col-md-6">
+
+            <div
+                class="stats-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <div
+                    class="stats-icon"
+                    style="background:#dbeafe;">
+
+                    <i class="ri-group-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Total Users
+
+                    </span>
+
+                    <h3 id="usersCounter">
+
+                        0
+
+                    </h3>
+
+                    <small class="text-primary">
+
+                        ↑ 325 Today
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+
+            <div
+                class="stats-card"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <div
+                    class="stats-icon"
+                    style="background:#fef3c7;">
+
+                    <i class="ri-bank-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Active Accounts
+
+                    </span>
+
+                    <h3 id="accountCounter">
+
+                        0
+
+                    </h3>
+
+                    <small class="text-warning">
+
+                        98% Verified
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      
+
+        <div class="col-xl-3 col-md-6">
+
+            <div
+                class="stats-card"
+                data-aos="fade-up"
+                data-aos-delay="300">
+
+                <div
+                    class="stats-icon"
+                    style="background:#fee2e2;">
+
+                    <i class="ri-time-line"></i>
+
+                </div>
+
+                <div class="stats-content">
+
+                    <span>
+
+                        Pending Requests
+
+                    </span>
+
+                    <h3 id="pendingCounter">
+
+                        0
+
+                    </h3>
+
+                    <small class="text-danger">
+
+                        Needs Approval
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-analytics">
+
+    <div class="row g-4">
+
+
+        <div class="col-xl-8">
+
+            <div
+                class="chart-card"
+                data-aos="fade-up">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h4>
+
+                            Revenue Analytics
+
+                        </h4>
+
+                        <p>
+
+                            Monthly revenue, expenses and profit overview
+
+                        </p>
+
+                    </div>
+
+                    <select class="form-select">
+
+                        <option>
+
+                            Last 6 Months
+
+                        </option>
+
+                        <option>
+
+                            Last Year
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="chart-body">
+
+                    <canvas id="revenueChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+   
+
+        <div class="col-xl-4">
+
+            <div
+                class="wallet-card"
+                data-aos="fade-left">
+
+                <div class="wallet-top">
+
+                    <div>
+
+                        <span>
+
+                            System Revenue
+
+                        </span>
+
+                        <h4 id="totalRevenue">
+
+                            $0
+
+                        </h4>
+
+                    </div>
+
+                    <i class="ri-bank-card-fill"></i>
+
+                </div>
+
+                <div class="wallet-number">
+
+                    ADMIN • FINANCE
+
+                </div>
+
+                <div class="wallet-bottom">
+
+                    <div>
+
+                        <small>
+
+                            Monthly Profit
+
+                        </small>
+
+                        <h6>
+
+                            +$85,420
+
+                        </h6>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+
+                            Active Users
+
+                        </small>
+
+                        <h6>
+
+                            12,548
+
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <div class="wallet-actions">
+
+                    <a
+                        href="error.html"
+                        class="hero-primary">
+
+                        <i class="ri-download-line"></i>
+
+                        Export
+
+                    </a>
+
+                    <a
+                        href="error.html"
+                        class="hero-secondary">
+
+                        <i class="ri-share-forward-line"></i>
+
+                        Share
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="dashboard-performance">
+
+    <div class="row g-4">
+
+     
+
+        <div class="col-lg-6">
+
+            <div
+                class="performance-card"
+                data-aos="fade-up">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h4>
+
+                            Monthly Performance
+
+                        </h4>
+
+                        <p>
+
+                            Current business performance
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="performance-list">
+
+                    <div>
+
+                        <div class="performance-item">
+
+                            <div>
+
+                                <h6>
+
+                                    Revenue Growth
+
+                                </h6>
+
+                                <small>
+
+                                    This Month
+
+                                </small>
+
+                            </div>
+
+                            <strong>
+
+                                92%
+
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar bg-success"
+                                style="width:92%">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="performance-item">
+
+                            <div>
+
+                                <h6>
+
+                                    Customer Satisfaction
+
+                                </h6>
+
+                                <small>
+
+                                    Overall Rating
+
+                                </small>
+
+                            </div>
+
+                            <strong>
+
+                                96%
+
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar bg-primary"
+                                style="width:96%">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <div class="performance-item">
+
+                            <div>
+
+                                <h6>
+
+                                    Completed Orders
+
+                                </h6>
+
+                                <small>
+
+                                    Success Rate
+
+                                </small>
+
+                            </div>
+
+                            <strong>
+
+                                88%
+
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar bg-warning"
+                                style="width:88%">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+            <div
+                class="ai-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <div class="ai-icon">
+
+                    <i class="ri-shield-check-line"></i>
+
+                </div>
+
+                <h4>
+
+                    System Health
+
+                </h4>
+
+                <p>
+
+                    All critical services are operational.
+                    Database, payment gateway and API
+                    servers are running normally.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Database Connected
+
+                    </li>
+
+                    <li>
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Payment Gateway Active
+
+                    </li>
+
+                    <li>
+
+                        <i class="ri-checkbox-circle-fill"></i>
+
+                        Server Uptime 99.98%
+
+                    </li>
+
+                </ul>
+
+                <a
+                    href="error.html"
+                    class="ai-btn">
+
+                    <i class="ri-eye-line"></i>
+
+                    View Report
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-users">
+
+    <div class="transaction-card" data-aos="fade-up">
+
+        <div class="transaction-header">
+
+            <div>
+
+                <h4>
+
+                    User Management
+
+                </h4>
+
+                <p>
+
+                    Manage all registered users
+
+                </p>
+
+            </div>
+
+            <div class="transaction-tools">
+
+                <div class="transaction-search">
+
+                    <i class="ri-search-line"></i>
+
+                    <input
+                        type="text"
+                        id="userSearch"
+                        placeholder="Search users...">
+
+                </div>
+
+                <select class="form-select">
+
+                    <option>
+
+                        All Users
+
+                    </option>
+
+                    <option>
+
+                        Active
+
+                    </option>
+
+                    <option>
+
+                        Blocked
+
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table transaction-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>User</th>
+
+                        <th>Email</th>
+
+                        <th>Role</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+
+                            <div class="transaction-user">
+
+                                <div class="transaction-icon success">
+
+                                    <i class="ri-user-line"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h6>
+
+                                     ]  Rahul
+
+                                    </h6>
+
+                                    <small>
+
+                                        Joined 2 Days Ago
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+
+                            john@gmail.com
+
+                        </td>
+
+                        <td>
+
+                            User
+
+                        </td>
+
+                        <td>
+
+                            <span class="status completed">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <div class="transaction-action">
+
+                                <a
+                                    href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-eye-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                                <a
+                                    href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-edit-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                                <a
+                                    href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-delete-bin-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <div class="transaction-user">
+
+                                <div class="transaction-icon info">
+
+                                    <i class="ri-user-line"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h6>
+
+                                        Sara
+
+                                    </h6>
+
+                                    <small>
+
+                                        Joined Yesterday
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+
+                            sarah@gmail.com
+
+                        </td>
+
+                        <td>
+
+                            User
+
+                        </td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <div class="transaction-action">
+
+                                <a href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-eye-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                                <a href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-edit-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                                <a href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-delete-bin-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <div class="transaction-user">
+
+                                <div class="transaction-icon warning">
+
+                                    <i class="ri-user-line"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h6>
+
+                                       Suresh
+
+                                    </h6>
+
+                                    <small>
+
+                                        Joined Last Week
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+
+                            suresh@gmail.com
+
+                        </td>
+
+                        <td>
+
+                            Admin
+
+                        </td>
+
+                        <td>
+
+                            <span class="status completed">
+
+                                Verified
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <div class="transaction-action">
+
+                                <a href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-eye-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                                <a href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-edit-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                                <a href="error.html">
+
+                                    <button>
+
+                                        <i class="ri-delete-bin-line"></i>
+
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-transactions mt-5">
+
+    <div class="transaction-card" data-aos="fade-up">
+
+        <div class="card-header">
+
+            <div>
+
+                <h4>
+
+                    Recent Transactions
+
+                </h4>
+
+                <p>
+
+                    Latest financial activities
+
+                </p>
+
+            </div>
+
+            <a href="error.html">
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table transaction-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Invoice</th>
+
+                        <th>User</th>
+
+                        <th>Amount</th>
+
+                        <th>Status</th>
+
+                        <th>Date</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+
+                            #INV-2026001
+
+                        </td>
+
+                        <td>
+
+                            John Smith
+
+                        </td>
+
+                        <td class="text-success">
+
+                            +$1,250
+
+                        </td>
+
+                        <td>
+
+                            <span class="status completed">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            26 Jul 2026
+
+                        </td>
+
+                        <td>
+
+                            <a href="error.html">
+
+                                <button>
+
+                                    <i class="ri-eye-line"></i>
+
+                                </button>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            #INV-2026002
+
+                        </td>
+
+                        <td>
+
+                            Sarah Johnson
+
+                        </td>
+
+                        <td class="text-danger">
+
+                            -$540
+
+                        </td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            25 Jul 2026
+
+                        </td>
+
+                        <td>
+
+                            <a href="error.html">
+
+                                <button>
+
+                                    <i class="ri-eye-line"></i>
+
+                                </button>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-ai">
+
+    <div class="row g-4">
+
+    
+
+        <div class="col-xl-8">
+
+            <div
+                class="ai-insight-card"
+                data-aos="fade-up">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h4>
+
+                            <i class="ri-robot-2-line"></i>
+
+                            AI Business Insights
+
+                        </h4>
+
+                        <p>
+
+                            Intelligent recommendations based on system analytics
+
+                        </p>
+
+                    </div>
+
+                    <span class="ai-live">
+
+                        <i class="ri-pulse-line"></i>
+
+                        Live Analysis
+
+                    </span>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="ai-box">
+
+                            <div class="ai-box-icon success">
+
+                                <i class="ri-line-chart-line"></i>
+
+                            </div>
+
+                            <h5>
+
+                                Revenue Growth
+
+                            </h5>
+
+                            <p>
+
+                                Revenue has increased by
+                                <strong>24%</strong>
+                                compared to last month.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="ai-box">
+
+                            <div class="ai-box-icon warning">
+
+                                <i class="ri-shield-check-line"></i>
+
+                            </div>
+
+                            <h5>
+
+                                Fraud Detection
+
+                            </h5>
+
+                            <p>
+
+                                No suspicious transactions detected in the last 24 hours.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="ai-box">
+
+                            <div class="ai-box-icon primary">
+
+                                <i class="ri-user-add-line"></i>
+
+                            </div>
+
+                            <h5>
+
+                                User Growth
+
+                            </h5>
+
+                            <p>
+
+                                325 new users joined this week.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="ai-box">
+
+                            <div class="ai-box-icon danger">
+
+                                <i class="ri-alarm-warning-line"></i>
+
+                            </div>
+
+                            <h5>
+
+                                Pending Approvals
+
+                            </h5>
+
+                            <p>
+
+                                18 account requests require admin approval.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+  
+
+        <div class="col-xl-4">
+
+            <div
+                class="notification-card"
+                data-aos="fade-left">
+
+                <div class="card-header">
+
+                    <h4>
+
+                        Notifications
+
+                    </h4>
+
+                </div>
+
+                <div class="notification-item">
+
+                    <div class="notification-icon success">
+
+                        <i class="ri-user-add-line"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h6>
+
+                            New User Registered
+
+                        </h6>
+
+                        <p>
+
+                            John Smith created a new account.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="notification-item">
+
+                    <div class="notification-icon warning">
+
+                        <i class="ri-bank-card-line"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h6>
+
+                            Payment Received
+
+                        </h6>
+
+                        <p>
+
+                            Monthly subscription completed.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="notification-item">
+
+                    <div class="notification-icon primary">
+
+                        <i class="ri-server-line"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h6>
+
+                            Server Status
+
+                        </h6>
+
+                        <p>
+
+                            All services are running normally.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-bottom">
+
+    <div class="activity-card" data-aos="fade-up">
+
+        <div class="card-header">
+
+            <div>
+
+                <h4>
+
+                    Recent Activities
+
+                </h4>
+
+                <p>
+
+                    Latest administrator actions
+
+                </p>
+
+            </div>
+
+            <a href="error.html">
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="activity-list">
+
+            <div class="activity-item">
+
+                <div class="activity-icon success">
+
+                    <i class="ri-user-add-line"></i>
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h6>
+
+                        New User Approved
+
+                    </h6>
+
+                    <p>
+
+                        Admin approved a new customer account.
+
+                    </p>
+
+                    <small>
+
+                        10 Minutes Ago
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <div class="activity-icon primary">
+
+                    <i class="ri-file-chart-line"></i>
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h6>
+
+                        Revenue Report Generated
+
+                    </h6>
+
+                    <p>
+
+                        Monthly revenue report exported successfully.
+
+                    </p>
+
+                    <small>
+
+                        1 Hour Ago
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <div class="activity-icon warning">
+
+                    <i class="ri-secure-payment-line"></i>
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h6>
+
+                        Payment Verified
+
+                    </h6>
+
+                    <p>
+
+                        Transaction verification completed successfully.
+
+                    </p>
+
+                    <small>
+
+                        Today
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="dashboard-footer">
+
+    <div class="d-md-flex justify-content-between align-items-center">
+
+        <p>
+
+            &copy; 2026 Stackly Finance. All Rights Reserved.
+
+        </p>
+
+        <div class="footer-links">
+
+            <a href="error.html">
+
+                Privacy
+
+            </a>
+
+            <a href="error.html">
+
+                Terms
+
+            </a>
+
+            <a href="error.html">
+
+                Support
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:800,
+
+once:true
+
+});
+"use strict";
+
+
+
+const userEmail = localStorage.getItem("userEmail");
+
+const userRole = localStorage.getItem("userRole");
+
+if (!userRole || userRole.toLowerCase() !== "admin") {
+
+    window.location.href = "login.html";
+
+}
+
+const dashboardEmail = document.getElementById("dashboardEmail");
+
+const dashboardRole = document.getElementById("dashboardRole");
+
+if (dashboardEmail) {
+
+    dashboardEmail.textContent = userEmail || "admin@stackly.com";
+
+}
+
+if (dashboardRole) {
+
+    dashboardRole.textContent = userRole || "Admin";
+
+}
+
+
+
+const sidebar = document.getElementById("dashboardSidebar");
+
+const sidebarToggle = document.getElementById("sidebarToggle");
+
+const overlay = document.getElementById("sidebarOverlay");
+
+function openSidebar() {
+
+    sidebar.classList.add("active");
+
+    overlay.classList.add("active");
+
+    document.body.classList.add("sidebar-open");
+
+}
+
+function closeSidebar() {
+
+    sidebar.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("sidebar-open");
+
+}
+
+if (sidebarToggle) {
+
+    sidebarToggle.addEventListener("click", openSidebar);
+
+}
+
+if (overlay) {
+
+    overlay.addEventListener("click", closeSidebar);
+
+}
+
+document.querySelectorAll(".sidebar-menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        if (window.innerWidth <= 992) {
+
+            closeSidebar();
+
+        }
+
+    });
+
+});
+
+document.addEventListener("keydown", function (e) {
+
+    if (e.key === "Escape") {
+
+        closeSidebar();
+
+    }
+
+});
+
+
+
+const logoutButton = document.getElementById("logoutButton");
+
+if (logoutButton) {
+
+    logoutButton.addEventListener("click", function () {
+
+        if (confirm("Are you sure you want to logout?")) {
+
+            localStorage.removeItem("userEmail");
+
+            localStorage.removeItem("userRole");
+
+            document.body.style.pointerEvents = "none";
+
+            setTimeout(function () {
+
+                window.location.href = "login.html";
+
+            }, 1200);
+
+        }
+
+    });
+
+}
+
+
+function counter(id, target, prefix = "") {
+
+    const element = document.getElementById(id);
+
+    if (!element) return;
+
+    let value = 0;
+
+    const increment = Math.ceil(target / 120);
+
+    const timer = setInterval(() => {
+
+        value += increment;
+
+        if (value >= target) {
+
+            value = target;
+
+            clearInterval(timer);
+
+        }
+
+        element.textContent = prefix + value.toLocaleString();
+
+    }, 20);
+
+}
+
+counter("revenueCounter", 1284520, "$");
+
+counter("usersCounter", 12548);
+
+counter("accountCounter", 10980);
+
+counter("pendingCounter", 18);
+
+counter("balanceCounter", 1284520, "$");
+
+counter("totalRevenue", 1284520, "$");
+
+
+
+const searchInput = document.getElementById("userSearch");
+
+if (searchInput) {
+
+    searchInput.addEventListener("keyup", function () {
+
+        const value = this.value.toLowerCase();
+
+        const rows = document.querySelectorAll(".transaction-table tbody tr");
+
+        rows.forEach(row => {
+
+            row.style.display = row.innerText.toLowerCase().includes(value)
+
+                ? ""
+
+                : "none";
+
+        });
+
+    });
+
+}
+
+
+
+const revenueChart = document.getElementById("revenueChart");
+
+if (revenueChart) {
+
+    new Chart(revenueChart, {
+
+        type: "line",
+
+        data: {
+
+            labels: [
+
+                "Jan",
+
+                "Feb",
+
+                "Mar",
+
+                "Apr",
+
+                "May",
+
+                "Jun"
+
+            ],
+
+            datasets: [
+
+                {
+
+                    label: "Revenue",
+
+                    data: [
+
+                        12000,
+
+                        18000,
+
+                        15000,
+
+                        23000,
+
+                        26000,
+
+                        30000
+
+                    ],
+
+                    borderColor: "#16a34a",
+
+                    backgroundColor: "rgba(22,163,74,.10)",
+
+                    fill: true,
+
+                    tension: .4,
+
+                    borderWidth: 3,
+
+                    pointRadius: 5
+
+                },
+
+                {
+
+                    label: "Expense",
+
+                    data: [
+
+                        9000,
+
+                        12000,
+
+                        11000,
+
+                        15000,
+
+                        18000,
+
+                        21000
+
+                    ],
+
+                    borderColor: "#3b82f6",
+
+                    backgroundColor: "rgba(59,130,246,.08)",
+
+                    fill: true,
+
+                    tension: .4,
+
+                    borderWidth: 3,
+
+                    pointRadius: 5
+
+                }
+
+            ]
+
+        },
+
+        options: {
+
+            responsive: true,
+
+            maintainAspectRatio: false,
+
+            plugins: {
+
+                legend: {
+
+                    position: "top"
+
+                }
+
+            },
+
+            scales: {
+
+                y: {
+
+                    beginAtZero: true
+
+                }
+
+            }
+
+        }
+
+    });
+
+}
+
+
+AOS.init({
+
+    duration: 800,
+
+    once: true
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>

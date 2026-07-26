@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stackly Finance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="loader.css">
+     <link rel="stylesheet" href="cursor.css">
+
+</head>
+
+<body>
+
+
+<div id="preloader">
+
+    <div class="loader-wrapper">
+
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+
+        <div class="finance-logo">
+
+    <img src="greenlogostackly.png"
+         alt="Stackly Finance Logo"
+         class="loader-logo">
+
+</div>
+
+    </div>
+
+    <h2 class="loader-title">
+        Stackly Finance
+    </h2>
+
+    <p class="loader-text">
+        Securing Your Financial Future...
+    </p>
+
+</div>
+
+
+
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+  
+
+<div id="website">
+
+<nav class="navbar navbar-expand-lg finance-navbar fixed-top">
+
+    <div class="container">
+
+   
+        <a class="navbar-brand" href="index.html">
+            <img src="greenlogostackly.png" class="logo" alt="Stackly Logo">
+        </a>
+
+      
+        <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="ri-menu-3-line menu-toggle-icon"></i>
+
+        </button>
+
+       
+        <div class="collapse navbar-collapse" id="navbar">
+
+          
+            <div class="mobile-sidebar-header d-lg-none">
+
+                <a href="index.html">
+                    <img src="greenlogostackly.png"
+                         alt="Stackly Logo"
+                         class="mobile-logo">
+                </a>
+
+               <button
+    class="navbar-toggler border-0 shadow-none"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbar">
+
+    <i class="ri-close-line"></i>
+
+</button>
+            </div>
+
+          
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">
+                        Home
+                    </a>
+                </li>
+ 
+                <li class="nav-item ">
+                    <a class="nav-link " href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="service.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="blog.html">
+                        Blog
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+       
+            <div class="d-flex nav-buttons">
+
+                <a href="login.html" class="btn login-btn">
+                    Login
+                </a>
+
+                <a href="signup.html" class="btn signup-btn">
+                    Signup
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="blog-hero">
+
+    <div class="blog-grid"></div>
+
+    <div class="blog-glow"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+       
+
+            <div class="col-lg-6">
+
+                <div class="blog-hero-content">
+
+                    <span class="blog-badge">
+
+                        <i class="ri-article-line"></i>
+
+                        Stackly Finance Blog
+
+                    </span>
+
+                    <h1 class="blog-title mt-4">
+
+                        Financial Insights
+
+                        <span>
+
+                            For Modern Businesses
+
+                        </span>
+
+                    </h1>
+
+                    <p class="blog-description mt-4">
+
+                        Discover expert insights on AI-powered finance,
+                        digital payments, cybersecurity, cloud banking,
+                        investment planning and enterprise automation.
+
+                    </p>
+
+                    <div class="blog-buttons">
+
+                        <a href="error.html"
+
+                           class="blog-btn-primary">
+
+                            <i class="ri-book-open-line"></i>
+
+                            Explore Articles
+
+                        </a>
+
+                        <a href="error.html"
+
+                           class="blog-btn-secondary">
+
+                            <i class="ri-mail-open-line"></i>
+
+                            Subscribe
+
+                        </a>
+
+                    </div>
+
+                    <div class="blog-counter">
+
+                        <div>
+
+                            <h3 id="blogArticleCount">
+
+                                0
+
+                            </h3>
+
+                            <span>
+
+                                Articles
+
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <h3 id="blogCategoryCount">
+
+                                0
+
+                            </h3>
+
+                            <span>
+
+                                Categories
+
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <h3 id="blogReaderCount">
+
+                                0
+
+                            </h3>
+
+                            <span>
+
+                                Monthly Readers
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+
+            <div class="col-lg-6">
+
+                <div class="blog-hero-visual">
+
+                    <div class="blog-main-card">
+
+                        <div class="blog-card-header">
+
+                            <i class="ri-line-chart-line"></i>
+
+                            <span>
+
+                                Trending Insight
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            AI Is Reshaping Enterprise Finance
+
+                        </h3>
+
+                        <p>
+
+                            Learn how artificial intelligence is transforming
+                            business reporting, forecasting and financial
+                            automation across modern enterprises.
+
+                        </p>
+
+                        <div class="blog-tags">
+
+                            <span>
+
+                                <i class="ri-robot-2-line"></i>
+
+                                AI Finance
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-bank-card-line"></i>
+
+                                Payments
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-shield-check-line"></i>
+
+                                Security
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+        FEATURED ARTICLE
+==========================================-->
+
+<section class="featured-blog">
+
+    <div class="container">
+
+        <div class="featured-heading text-center">
+
+            <span class="featured-badge">
+
+                <i class="ri-bookmark-3-line"></i>
+
+                Featured Story
+
+            </span>
+
+            <h2>
+
+                Insights That Drive
+
+                <span>Smarter Financial Decisions</span>
+
+            </h2>
+
+            <p>
+
+                Explore our latest featured article covering trends,
+                innovations and expert strategies shaping the future
+                of finance and technology.
+
+            </p>
+
+        </div>
+
+        <div class="featured-wrapper">
+
+            <div class="row align-items-center g-5">
+
+             
+
+                <div class="col-lg-6">
+
+                    <div class="featured-image">
+
+                        <img src="blogfinance.webp"
+
+                             alt="Featured Blog">
+
+                    </div>
+
+                </div>
+
+             
+
+                <div class="col-lg-6">
+
+                    <div class="featured-content">
+
+                        <span class="featured-category">
+
+                            <i class="ri-robot-2-line"></i>
+
+                            AI Finance
+
+                        </span>
+
+                        <h3>
+
+                            How Artificial Intelligence Is
+                            Transforming Enterprise Finance
+
+                        </h3>
+
+                        <p>
+
+                            Learn how AI is helping businesses automate
+                            financial reporting, improve forecasting,
+                            reduce operational costs and strengthen
+                            security with intelligent decision making.
+
+                        </p>
+
+                        <div class="featured-meta">
+
+                            <span>
+
+                                <i class="ri-user-3-line"></i>
+
+                                Sarah Johnson
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 28, 2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                5 Min Read
+
+                            </span>
+
+                        </div>
+
+                        <a href="error.html"
+
+                           class="featured-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="latest-articles" id="latest-articles">
+
+    <div class="container">
+
+
+        <div class="latest-heading text-center">
+
+            <span class="latest-badge">
+
+                <i class="ri-newspaper-line"></i>
+
+                Latest Articles
+
+            </span>
+
+            <h2>
+
+                Stay Updated With
+
+                <span>Financial Insights</span>
+
+            </h2>
+
+            <p>
+
+                Explore expert articles covering AI finance,
+                cybersecurity, digital banking, cloud computing,
+                and business automation.
+
+            </p>
+
+        </div>
+
+     
+
+        <div class="latest-filter">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="ai">
+
+                AI
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="banking">
+
+                Banking
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="security">
+
+                Security
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="investment">
+
+                Investment
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="cloud">
+
+                Cloud
+
+            </button>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+
+<div class="col-lg-4 col-md-6 article-item"
+     data-category="ai">
+
+    <article class="article-card">
+
+        <div class="article-image">
+
+            <img src="blogfin1.webp"
+                 alt="AI Finance">
+
+            <span class="article-category">
+
+                <i class="ri-robot-2-line"></i>
+
+                AI Finance
+
+            </span>
+
+        </div>
+
+        <div class="article-content">
+
+            <div class="article-meta">
+
+                <span>
+
+                    <i class="ri-calendar-line"></i>
+
+                    July 28, 2026
+
+                </span>
+
+                <span>
+
+                    <i class="ri-time-line"></i>
+
+                    5 Min Read
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                How AI Is Transforming Enterprise Finance
+
+            </h3>
+
+            <p>
+
+                Discover how artificial intelligence improves forecasting,
+                financial reporting and business decision making.
+
+            </p>
+
+            <div class="article-footer">
+
+                <div class="article-author">
+
+                    <img src="student2.webp"
+                         alt="Author">
+
+                    <span>
+
+                        Sarah Johnson
+
+                    </span>
+
+                </div>
+
+                <a href="error.html">
+
+                    Read More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 article-item"
+     data-category="security">
+
+    <article class="article-card">
+
+        <div class="article-image">
+
+            <img src="blogfin2.webp"
+                 alt="Cyber Security">
+
+            <span class="article-category">
+
+                <i class="ri-shield-check-line"></i>
+
+                Security
+
+            </span>
+
+        </div>
+
+        <div class="article-content">
+
+            <div class="article-meta">
+
+                <span>
+
+                    <i class="ri-calendar-line"></i>
+
+                    July 24, 2026
+
+                </span>
+
+                <span>
+
+                    <i class="ri-time-line"></i>
+
+                    6 Min Read
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                Modern Cyber Security For Financial Systems
+
+            </h3>
+
+            <p>
+
+                Learn how enterprises protect customer data
+                using modern financial security solutions.
+
+            </p>
+
+            <div class="article-footer">
+
+                <div class="article-author">
+
+                    <img src="img41.webp"
+                         alt="Author">
+
+                    <span>
+
+                        James Walker
+
+                    </span>
+
+                </div>
+
+                <a href="error.html">
+
+                    Read More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 article-item"
+     data-category="banking">
+
+    <article class="article-card">
+
+        <div class="article-image">
+
+            <img src="blogfin3.webp"
+                 alt="Digital Banking">
+
+            <span class="article-category">
+
+                <i class="ri-bank-line"></i>
+
+                Banking
+
+            </span>
+
+        </div>
+
+        <div class="article-content">
+
+            <div class="article-meta">
+
+                <span>
+
+                    <i class="ri-calendar-line"></i>
+
+                    July 20, 2026
+
+                </span>
+
+                <span>
+
+                    <i class="ri-time-line"></i>
+
+                    4 Min Read
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                Digital Banking Trends Every Business Should Know
+
+            </h3>
+
+            <p>
+
+                Explore the latest innovations driving
+                digital banking experiences worldwide.
+
+            </p>
+
+            <div class="article-footer">
+
+                <div class="article-author">
+
+                    <img src="image10.webp"
+                         alt="Author">
+
+                    <span>
+
+                        Michael Brown
+
+                    </span>
+
+                </div>
+
+                <a href="error.html">
+
+                    Read More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 article-item"
+     data-category="investment">
+
+    <article class="article-card">
+
+        <div class="article-image">
+
+            <img src="blogfin4.webp"
+                 alt="Investment">
+
+            <span class="article-category">
+
+                <i class="ri-funds-line"></i>
+
+                Investment
+
+            </span>
+
+        </div>
+
+        <div class="article-content">
+
+            <div class="article-meta">
+
+                <span>
+
+                    <i class="ri-calendar-line"></i>
+
+                    July 18, 2026
+
+                </span>
+
+                <span>
+
+                    <i class="ri-time-line"></i>
+
+                    7 Min Read
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                Smart Investment Strategies For Growing Companies
+
+            </h3>
+
+            <p>
+
+                Understand how data-driven investment planning
+                helps businesses achieve sustainable growth.
+
+            </p>
+
+            <div class="article-footer">
+
+                <div class="article-author">
+
+                    <img src="student1.webp"
+                         alt="Author">
+
+                    <span>
+
+                        Emma Wilson
+
+                    </span>
+
+                </div>
+
+                <a href="error.html">
+
+                    Read More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 article-item"
+     data-category="cloud">
+
+    <article class="article-card">
+
+        <div class="article-image">
+
+            <img src="blogfin5.webp"
+                 alt="Cloud">
+
+            <span class="article-category">
+
+                <i class="ri-cloud-line"></i>
+
+                Cloud
+
+            </span>
+
+        </div>
+
+        <div class="article-content">
+
+            <div class="article-meta">
+
+                <span><i class="ri-calendar-line"></i> July 15, 2026</span>
+
+                <span><i class="ri-time-line"></i> 5 Min Read</span>
+
+            </div>
+
+            <h3>
+
+                Why Cloud Banking Is The Future Of Finance
+
+            </h3>
+
+            <p>
+
+                Learn how secure cloud platforms improve
+                banking infrastructure and scalability.
+
+            </p>
+
+            <div class="article-footer">
+
+                <div class="article-author">
+
+                    <img src="student2.webp"
+                         alt="Author">
+
+                    <span>
+
+                        Daniel Cooper
+
+                    </span>
+
+                </div>
+
+                <a href="error.html">
+
+                    Read More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 article-item"
+     data-category="ai">
+
+    <article class="article-card">
+
+        <div class="article-image">
+
+            <img src="blogfin6.webp"
+                 alt="Automation">
+
+            <span class="article-category">
+
+                <i class="ri-settings-3-line"></i>
+
+                Automation
+
+            </span>
+
+        </div>
+
+        <div class="article-content">
+
+            <div class="article-meta">
+
+                <span><i class="ri-calendar-line"></i> July 12, 2026</span>
+
+                <span><i class="ri-time-line"></i> 8 Min Read</span>
+
+            </div>
+
+            <h3>
+
+                Intelligent Automation For Financial Operations
+
+            </h3>
+
+            <p>
+
+                Discover how automation simplifies finance
+                operations while improving efficiency.
+
+            </p>
+
+            <div class="article-footer">
+
+                <div class="article-author">
+
+                    <img src="student3.webp"
+                         alt="Author">
+
+                    <span>
+
+                        Olivia Smith
+
+                    </span>
+
+                </div>
+
+                <a href="error.html">
+
+                    Read More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+        </div>
+
+      
+
+        <div class="text-center mt-5">
+
+            <a href="error.html"
+
+               class="latest-load-btn">
+
+                Load More Articles
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+        RESOURCES SECTION
+==========================================-->
+
+<section class="resource-section">
+
+    <div class="container">
+
+        <div class="resource-heading text-center">
+
+            <span class="resource-badge">
+
+                <i class="ri-book-open-line"></i>
+
+                Free Resources
+
+            </span>
+
+            <h2>
+
+                Learn, Download &
+
+                <span>Grow Your Business</span>
+
+            </h2>
+
+            <p>
+
+                Explore premium finance resources,
+                implementation guides, whitepapers,
+                API documentation and expert reports.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4 mt-5">
+
+            
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="resource-card">
+
+                    <div class="resource-icon">
+
+                        <i class="ri-book-open-line"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Finance eBook
+
+                    </h4>
+
+                    <p>
+
+                        Complete guide to AI-powered financial management.
+
+                    </p>
+
+                    <a href="error.html">
+
+                        Download
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="resource-card">
+
+                    <div class="resource-icon">
+
+                        <i class="ri-file-pdf-2-line"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Whitepaper
+
+                    </h4>
+
+                    <p>
+
+                        Enterprise security strategies for finance.
+
+                    </p>
+
+                    <a href="error.html">
+
+                        Read Report
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="resource-card">
+
+                    <div class="resource-icon">
+
+                        <i class="ri-code-box-line"></i>
+
+                    </div>
+
+                    <h4>
+
+                        API Docs
+
+                    </h4>
+
+                    <p>
+
+                        Learn how to integrate Stackly Finance APIs.
+
+                    </p>
+
+                    <a href="error.html">
+
+                        Explore
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+         
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="resource-card">
+
+                    <div class="resource-icon">
+
+                        <i class="ri-download-cloud-2-line"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Investment Toolkit
+
+                    </h4>
+
+                    <p>
+
+                        Practical templates and planning resources.
+
+                    </p>
+
+                    <a href="error.html">
+
+                        Download
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="finance-footer">
+
+    <div class="footer-overlay"></div>
+
+    <div class="container">
+
+        
+
+        <div class="footer-top row align-items-center gy-5">
+
+           
+
+            <div class="col-lg-4">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="greenlogostackly.png"
+                             alt="Stackly Finance">
+
+                    </a>
+
+                    <p>
+
+                        Smart financial management platform helping
+                        startups, businesses and enterprises automate
+                        accounting, analytics and growth using AI.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="newsletter-title">
+
+                    <h3>
+
+                        Register For
+                        <br>
+                        Our Updates
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+        
+            <div class="col-lg-5">
+
+                <form action="error.html">
+
+                    <div class="newsletter-box">
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required>
+
+                        <button type="submit">
+
+                            <i class="ri-send-plane-fill"></i>
+
+                        </button>
+
+                    </div>
+
+                    <label class="footer-check">
+
+                        <input type="checkbox" required>
+
+                        <span>
+
+                            I acknowledge all the
+                            Terms & Conditions
+
+                        </span>
+
+                    </label>
+
+                </form>
+
+            </div>
+
+        </div>
+
+     
+
+        <div class="footer-divider"></div>
+
+       
+
+        <div class="row gy-5">
+
+           
+
+            <div class="col-xl-3 col-lg-6">
+
+                <div class="footer-widget">
+
+                    <h4>
+
+                        Stay Connected
+
+                    </h4>
+
+                    <div class="footer-social">
+
+                        <a href="error.html">
+
+                            <i class="ri-twitter-x-line"></i>
+
+                        </a>
+
+                        <a href="error.html">
+
+                            <i class="ri-youtube-fill"></i>
+
+                        </a>
+
+                        <a href="error.html">
+
+                            <i class="ri-instagram-line"></i>
+
+                        </a>
+
+                        <a href="error.html">
+
+                            <i class="ri-linkedin-box-fill"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+   
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="footer-widget">
+
+                    <h4>
+
+                        Company
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="error.html">About Us</a></li>
+
+                        <li><a href="error.html">Our Team</a></li>
+
+                        <li><a href="error.html">Portfolio</a></li>
+
+                        <li><a href="error.html">Careers</a></li>
+
+                        <li><a href="error.html">Client Reviews</a></li>
+
+                        <li><a href="error.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+     
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="footer-widget">
+
+                    <h4>
+
+                        Support
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="error.html">Help Center</a></li>
+
+                        <li><a href="error.html">Live Chat</a></li>
+
+                        <li><a href="error.html">API Docs</a></li>
+
+                        <li><a href="error.html">Privacy Policy</a></li>
+
+                        <li><a href="error.html">Terms & Conditions</a></li>
+
+                        <li><a href="error.html">Security</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="footer-widget">
+
+                    <h4>
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="error.html">Dashboard</a></li>
+
+                        <li><a href="error.html">Pricing</a></li>
+
+                        <li><a href="error.html">FAQ</a></li>
+
+                        <li><a href="error.html">Integrations</a></li>
+
+                        <li><a href="error.html">Blog</a></li>
+
+                        <li><a href="error.html">Documentation</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+       
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy; 2026 Stackly Finance.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+<script>
+   
+
+const blogHeroSection = document.querySelector(".blog-hero");
+
+const blogArticleCounter =
+document.getElementById("blogArticleCount");
+
+const blogCategoryCounter =
+document.getElementById("blogCategoryCount");
+
+const blogReaderCounter =
+document.getElementById("blogReaderCount");
+
+let blogHeroAnimated = false;
+
+
+function animateBlogCounter(element,target,suffix=""){
+
+    let start = 0;
+
+    const duration = 1800;
+
+    const increment = target / (duration / 16);
+
+    function update(){
+
+        start += increment;
+
+        if(start >= target){
+
+            element.textContent = target + suffix;
+
+            return;
+
+        }
+
+        element.textContent = Math.floor(start) + suffix;
+
+        requestAnimationFrame(update);
+
+    }
+
+    update();
+
+}
+
+function animateBlogHero(){
+
+    if(blogHeroAnimated) return;
+
+    blogHeroAnimated = true;
+
+    animateBlogCounter(blogArticleCounter,45,"+");
+
+    animateBlogCounter(blogCategoryCounter,12);
+
+    animateBlogCounter(blogReaderCounter,100,"K+");
+
+}
+
+
+const blogHeroObserver = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+animateBlogHero();
+
+}
+
+});
+
+},
+
+{
+
+threshold:.4
+
+}
+
+);
+
+blogHeroObserver.observe(blogHeroSection);
+
+
+
+
+document.querySelectorAll(
+
+".blog-btn-primary,.blog-btn-secondary"
+
+).forEach(button=>{
+
+button.addEventListener("mouseenter",()=>{
+
+button.style.transform="translateY(-5px)";
+
+});
+
+button.addEventListener("mouseleave",()=>{
+
+button.style.transform="translateY(0)";
+
+});
+
+});
+
+
+const blogRevealItems = document.querySelectorAll(
+
+".blog-title,.blog-description,.blog-counter,.blog-main-card"
+
+);
+
+const blogRevealObserver = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("blog-show");
+
+}
+
+});
+
+},
+
+{
+
+threshold:.2
+
+}
+
+);
+
+blogRevealItems.forEach(item=>{
+
+blogRevealObserver.observe(item);
+
+});
+
+
+const featuredSection =
+document.querySelector(".featured-blog");
+
+const featuredImage =
+document.querySelector(".featured-image");
+
+const featuredContent =
+document.querySelector(".featured-content");
+
+const featuredHeading =
+document.querySelector(".featured-heading");
+
+const featuredButton =
+document.querySelector(".featured-btn");
+
+
+const featuredObserver = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("featured-show");
+
+}
+
+});
+
+},
+
+{
+
+threshold:.25
+
+}
+
+);
+featuredObserver.observe(featuredHeading);
+
+featuredObserver.observe(featuredImage);
+
+featuredObserver.observe(featuredContent);
+
+
+featuredButton.addEventListener("mouseenter",()=>{
+
+featuredButton.style.transform="translateY(-5px)";
+
+});
+
+featuredButton.addEventListener("mouseleave",()=>{
+
+featuredButton.style.transform="translateY(0px)";
+
+});
+
+
+const articleCards =
+document.querySelectorAll(".article-item");
+
+const filterButtons =
+document.querySelectorAll(".filter-btn");
+
+const loadMoreButton =
+document.querySelector(".latest-load-btn");
+
+let visibleArticles = 6;
+
+
+filterButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+filterButtons.forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+button.classList.add("active");
+
+const filter = button.dataset.filter;
+
+articleCards.forEach(card=>{
+
+const category = card.dataset.category;
+
+if(filter==="all" || category===filter){
+
+card.style.display="block";
+
+card.classList.add("article-show");
+
+}
+
+else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+});
+
+
+const articleObserver = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("article-show");
+
+}
+
+});
+
+},
+
+{
+
+threshold:.20
+
+}
+
+);
+
+articleCards.forEach(card=>{
+
+articleObserver.observe(card);
+
+});
+
+
+function showArticles(){
+
+articleCards.forEach((card,index)=>{
+
+if(index<visibleArticles){
+
+card.style.display="block";
+
+}
+
+else{
+
+card.style.display="none";
+
+}
+
+});
+
+if(visibleArticles>=articleCards.length){
+
+loadMoreButton.style.display="none";
+
+}
+
+}
+
+showArticles();
+
+loadMoreButton.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+visibleArticles+=3;
+
+showArticles();
+
+});
+
+
+const resourceSection =
+document.querySelector(".resource-section");
+
+const resourceCards =
+document.querySelectorAll(".resource-card");
+
+const resourceLinks =
+document.querySelectorAll(".resource-card a");
+
+
+const resourceObserver = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("resource-show");
+
+}
+
+});
+
+},
+
+{
+
+threshold:.2
+
+}
+
+);
+
+resourceCards.forEach(card=>{
+
+resourceObserver.observe(card);
+
+});
+
+
+resourceCards.forEach(card=>{
+
+card.addEventListener("mouseenter",()=>{
+
+card.style.transform="translateY(-12px)";
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.transform="translateY(0px)";
+
+});
+
+});
+
+resourceLinks.forEach(link=>{
+
+link.addEventListener("mouseenter",()=>{
+
+const icon = link.querySelector("i");
+
+if(icon){
+
+icon.style.transform="translateX(6px)";
+
+}
+
+});
+
+link.addEventListener("mouseleave",()=>{
+
+const icon = link.querySelector("i");
+
+if(icon){
+
+icon.style.transform="translateX(0px)";
+
+}
+
+});
+
+});
+
+
+resourceCards.forEach(card=>{
+
+card.addEventListener("click",function(e){
+
+const ripple=document.createElement("span");
+
+const rect=this.getBoundingClientRect();
+
+const size=Math.max(rect.width,rect.height);
+
+ripple.style.width=size+"px";
+
+ripple.style.height=size+"px";
+
+ripple.style.left=(e.clientX-rect.left-size/2)+"px";
+
+ripple.style.top=(e.clientY-rect.top-size/2)+"px";
+
+ripple.className="resource-ripple";
+
+this.appendChild(ripple);
+
+setTimeout(()=>{
+
+ripple.remove();
+
+},600);
+
+});
+
+});
+document.addEventListener("DOMContentLoaded",()=>{
+
+gsap.registerPlugin(ScrollTrigger);
+const footerTimeline = gsap.timeline({
+
+    scrollTrigger:{
+
+        trigger:".finance-footer",
+
+        start:"top 85%",
+
+        once:true
+
+    }
+
+});
+
+footerTimeline
+
+.from(".footer-brand",{
+
+    x:-80,
+
+    opacity:0,
+
+    duration:.8,
+
+    ease:"power3.out"
+
+})
+
+.from(".newsletter-title",{
+
+    y:50,
+
+    opacity:0,
+
+    duration:.7
+
+},"-=0.4")
+
+.from(".newsletter-box",{
+
+    x:80,
+
+    opacity:0,
+
+    duration:.8
+
+},"-=0.5")
+
+.from(".footer-divider",{
+
+    scaleX:0,
+
+    transformOrigin:"left",
+
+    duration:.8
+
+})
+
+.from(".footer-widget",{
+
+    y:60,
+
+    opacity:0,
+
+    stagger:.18,
+
+    duration:.7
+
+},"-=0.3")
+
+.from(".footer-bottom",{
+
+    opacity:0,
+
+    y:30,
+
+    duration:.6
+
+},"-=0.2");
+gsap.to(".footer-overlay",{
+
+    y:-20,
+
+    duration:6,
+
+    repeat:-1,
+
+    yoyo:true,
+
+    ease:"sine.inOut"
+
+});
+document.querySelectorAll(".footer-social a").forEach(icon=>{
+
+icon.addEventListener("mouseenter",()=>{
+
+gsap.to(icon,{
+
+scale:1.15,
+
+rotation:360,
+
+duration:.45,
+
+ease:"back.out(2)"
+
+});
+
+});
+
+icon.addEventListener("mouseleave",()=>{
+
+gsap.to(icon,{
+
+scale:1,
+
+rotation:0,
+
+duration:.4
+
+});
+
+});
+
+});
+document.querySelectorAll(".footer-widget a").forEach(link=>{
+
+link.addEventListener("mouseenter",()=>{
+
+gsap.to(link,{
+
+x:10,
+
+duration:.25
+
+});
+
+});
+
+link.addEventListener("mouseleave",()=>{
+
+gsap.to(link,{
+
+x:0,
+
+duration:.25
+
+});
+
+});
+
+});const footerButton=document.querySelector(".newsletter-box button");
+
+if(footerButton){
+
+footerButton.addEventListener("mouseenter",()=>{
+
+gsap.to(footerButton,{
+
+scale:1.08,
+
+duration:.3
+
+});
+
+});
+
+footerButton.addEventListener("mouseleave",()=>{
+
+gsap.to(footerButton,{
+
+scale:1,
+
+duration:.3
+
+});
+
+});
+
+}
+});
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".nav-link").forEach(link => {
+
+    link.classList.remove("active");
+
+    if(link.getAttribute("href") === currentPage){
+        link.classList.add("active");
+    }
+
+});
+</script>
+
+</body>
+</html>

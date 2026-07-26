@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>404 - Page Not Found | Stackly Finance</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet">
+
+
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+<style>
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+
+}
+
+:root{
+
+--primary:#16a34a;
+--secondary:#22c55e;
+--dark:#0f172a;
+--text:#64748b;
+--light:#f8fbff;
+
+}
+
+body{
+
+background:var(--light);
+
+overflow-x:hidden;
+
+min-height:100vh;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+
+.grid-bg{
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+        linear-gradient(rgba(15,23,42,.05) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(15,23,42,.05) 1px,transparent 1px);
+
+    background-size:70px 70px;
+
+    z-index:-5;
+
+}
+
+.glow{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    z-index:-4;
+
+}
+
+.glow1{
+
+    width:420px;
+
+    height:420px;
+
+    background:rgba(22,163,74,.18);
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.glow2{
+
+    width:520px;
+
+    height:520px;
+
+    background:rgba(34,197,94,.18);
+
+    right:-180px;
+
+    bottom:-180px;
+
+}
+
+.floating-circle{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    background:rgba(22,163,74,.08);
+
+    animation:floatCircle 10s linear infinite;
+
+    z-index:-3;
+
+}
+
+.circle1{
+
+    width:90px;
+
+    height:90px;
+
+    top:18%;
+
+    left:8%;
+
+}
+
+.circle2{
+
+    width:70px;
+
+    height:70px;
+
+    bottom:20%;
+
+    right:10%;
+
+}
+
+.circle3{
+
+    width:120px;
+
+    height:120px;
+
+    top:65%;
+
+    left:45%;
+
+}
+
+@keyframes floatCircle{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+
+
+.error-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:120px 0;
+
+}
+
+.error-content{
+
+    max-width:560px;
+
+}
+
+.error-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:rgba(22,163,74,.12);
+
+    color:var(--primary);
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+}
+
+.error-number{
+
+    font-size:9rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    line-height:1;
+
+    margin:30px 0 10px;
+
+    text-shadow:
+
+        0 20px 40px rgba(22,163,74,.25);
+
+}
+
+.error-content h2{
+
+    font-size:3rem;
+
+    color:var(--dark);
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.error-content p{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+.error-illustration{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:600px;
+
+}
+
+.glass-card{
+
+    width:420px;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-radius:35px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.9);
+
+    box-shadow:
+
+        0 25px 60px rgba(15,23,42,.10);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(255,255,255,.55),
+
+        transparent,
+
+        rgba(22,163,74,.08)
+
+    );
+
+    pointer-events:none;
+
+}
+
+.error-icon{
+
+    width:120px;
+
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #16a34a,
+
+        #22c55e
+
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:60px;
+
+    box-shadow:
+
+        0 20px 45px rgba(22,163,74,.35);
+
+}
+
+.glass-card h3{
+
+    margin-top:30px;
+
+    color:var(--dark);
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.glass-card p{
+
+    color:var(--text);
+
+    margin-top:15px;
+
+    line-height:1.8;
+
+}
+
+
+
+.floating-card{
+
+    position:absolute;
+
+    background:#fff;
+
+    padding:16px 24px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+    box-shadow:
+
+        0 18px 40px rgba(0,0,0,.10);
+
+    animation:floatCard 5s ease-in-out infinite;
+
+}
+
+.floating-card i{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+}
+
+.card1{
+
+    top:30px;
+
+    left:-40px;
+
+}
+
+.card2{
+
+    top:110px;
+
+    right:-50px;
+
+}
+
+.card3{
+
+    bottom:110px;
+
+    left:-50px;
+
+}
+
+.card4{
+
+    bottom:25px;
+
+    right:-30px;
+
+}
+
+@keyframes floatCard{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.error-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin:40px 0;
+
+}
+
+.back-btn,
+.home-btn{
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.back-btn{
+
+    background:#fff;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.back-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(22,163,74,.25);
+
+}
+
+.home-btn{
+
+    background:linear-gradient(
+        135deg,
+        #16a34a,
+        #22c55e
+    );
+
+    color:#fff;
+
+}
+
+.home-btn:hover{
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(22,163,74,.35);
+
+}
+
+
+
+.help-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+.help-links a{
+
+    color:#64748b;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.help-links a:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+
+@media(max-width:991px){
+
+.error-section{
+
+    padding:100px 0;
+
+    text-align:center;
+
+}
+
+.error-content{
+
+    margin:auto;
+
+}
+
+.error-number{
+
+    font-size:7rem;
+
+}
+
+.error-content h2{
+
+    font-size:2.5rem;
+
+}
+
+.error-illustration{
+
+    min-height:450px;
+
+}
+
+.glass-card{
+
+    width:100%;
+
+    max-width:420px;
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4{
+
+    transform:scale(.85);
+
+}
+
+}
+
+@media(max-width:767px){
+
+.error-section{
+
+    padding:80px 0;
+
+}
+
+.error-number{
+
+    font-size:5rem;
+
+}
+
+.error-content h2{
+
+    font-size:2rem;
+
+}
+
+.error-buttons{
+
+    flex-direction:column;
+
+}
+
+.back-btn,
+.home-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.help-links{
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.glass-card{
+
+    padding:40px 25px;
+
+}
+
+.error-icon{
+
+    width:90px;
+
+    height:90px;
+
+    font-size:45px;
+
+}
+
+.floating-card{
+
+    display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="grid-bg"></div>
+
+<div class="glow glow1"></div>
+
+<div class="glow glow2"></div>
+
+<div class="floating-circle circle1"></div>
+
+<div class="floating-circle circle2"></div>
+
+<div class="floating-circle circle3"></div>
+
+
+
+<section class="error-section">
+
+<div class="container">
+
+<div class="row align-items-center gy-5">
+
+
+
+<div class="col-lg-6">
+
+<div class="error-content">
+
+<span class="error-badge">
+
+<i class="ri-error-warning-line"></i>
+
+404 Error
+
+</span>
+
+<h1 class="error-number">
+
+404
+
+</h1>
+
+<h2>
+
+Oops!
+
+Page Not Found
+
+</h2>
+
+<p>
+
+The page you're looking for may have been removed,
+renamed or is temporarily unavailable.
+Please check the URL or return to the homepage.
+
+</p>
+
+<div class="error-buttons">
+
+<button
+class="btn back-btn"
+onclick="history.back()">
+
+<i class="ri-arrow-left-line"></i>
+
+Go Back
+
+</button>
+
+<a href="index.html"
+class="btn home-btn">
+
+<i class="ri-home-4-line"></i>
+
+Back Home
+
+</a>
+
+</div>
+
+<div class="help-links">
+
+<a href="service.html">
+
+Services
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="blog.html">
+
+Blog
+
+</a>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-6">
+
+<div class="error-illustration">
+
+<div class="glass-card">
+
+<div class="error-icon">
+
+<i class="ri-search-eye-line"></i>
+
+</div>
+
+<h3>
+
+Page Not Found
+
+</h3>
+
+<p>
+
+The requested resource couldn't be located.
+
+</p>
+
+</div>
+
+<div class="floating-card card1">
+
+<i class="ri-shield-check-fill"></i>
+
+Security
+
+</div>
+
+<div class="floating-card card2">
+
+<i class="ri-global-line"></i>
+
+Global
+
+</div>
+
+<div class="floating-card card3">
+
+<i class="ri-ai-generate"></i>
+
+AI
+
+</div>
+
+<div class="floating-card card4">
+
+<i class="ri-database-2-fill"></i>
+
+Data
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<script>
+
+document.querySelectorAll(".back-btn,.home-btn").forEach(btn=>{
+
+btn.addEventListener("mouseenter",()=>{
+
+btn.style.transform="translateY(-5px)";
+
+});
+
+btn.addEventListener("mouseleave",()=>{
+
+btn.style.transform="translateY(0)";
+
+});
+
+});
+
+document.querySelectorAll(".floating-circle").forEach(circle=>{
+
+circle.style.animationDuration=(8+Math.random()*6)+"s";
+
+});
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
