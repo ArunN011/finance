@@ -347,8 +347,7 @@
                         <h1>
 
                             Welcome Back,
-
-                            <span id="dashboardUserRole">
+                           <span id="dashboardUserRole">
 
                                 User
 
@@ -2867,61 +2866,43 @@ sidebar.addEventListener("click", function (e) {
 
 });
 
-const dashboardEmail =
-document.getElementById("dashboardEmail");
+const dashboardEmail = document.getElementById("dashboardEmail");
 
-const dashboardRole =
-document.getElementById("dashboardRole");
+const dashboardRole = document.getElementById("dashboardRole");
 
-const dashboardUserRole =
-document.getElementById("dashboardUserRole");
+const dashboardUserRole = document.getElementById("dashboardUserRole");
 
-const userEmail =
-localStorage.getItem("userEmail");
+const userEmail = localStorage.getItem("userEmail");
 
-const userRole =
-localStorage.getItem("userRole");
+const userRole = localStorage.getItem("userRole");
 
-if(!userEmail){
+if (!userEmail) {
 
-window.location.href="login.html";
+    window.location.href = "login.html";
 
 }
 
-dashboardEmail.textContent=userEmail;
+if (dashboardEmail) {
 
-dashboardRole.textContent=
-
-userRole.charAt(0).toUpperCase()+
-
-userRole.slice(1);
-
-dashboardUserRole.textContent=
-
-userRole.charAt(0).toUpperCase()+
-
-userRole.slice(1);
-
-
-const logoutButton =
-document.getElementById("logoutButton");
-
-logoutButton.addEventListener("click",()=>{
-
-const confirmLogout=
-
-confirm("Are you sure you want to logout?");
-
-if(confirmLogout){
-
-localStorage.clear();
-
-window.location.href="login.html";
+    dashboardEmail.textContent = userEmail;
 
 }
 
-});
+if (dashboardRole) {
 
+    dashboardRole.textContent =
+        userRole.charAt(0).toUpperCase() +
+        userRole.slice(1);
+
+}
+
+
+
+if (dashboardUserRole) {
+
+    dashboardUserRole.textContent = userEmail;
+
+}
 
 function animateCounter(id,end,prefix){
 
