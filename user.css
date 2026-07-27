@@ -3409,6 +3409,94 @@ font-size:24px;
 }
 
 
+@media (max-width: 992px) {
+
+    .dashboard-search {
+
+        display: none;
+
+    }
+
+    .navbar-right {
+
+        display: none;
+
+    }
+
+    .navbar-left {
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+    }
+
+    .navbar-left h4 {
+
+        display: none;
+
+    }
+
+    .mobile-logo {
+
+        display: flex;
+
+        align-items: center;
+
+    }
+
+    #sidebarToggle {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 46px;
+
+        height: 46px;
+
+        border-radius: 12px;
+
+        background: #fff;
+
+        border: 1px solid var(--border);
+
+        font-size: 24px;
+
+    }
+
+}
+@media (max-width: 576px) {
+
+    .navbar-right {
+
+        display: none;
+
+    }
+
+    .dashboard-search {
+
+        display: none;
+
+    }
+
+    .navbar-left {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+}
+
+
 @media(max-width:992px){
 
 .mobile-logo{
@@ -3536,6 +3624,7 @@ margin-left:0;
 width:100%;
 
 padding:20px;
+margin-top: 90px;
 
 }
 
