@@ -132,7 +132,7 @@
 
                     </h5>
 
-                    <span id="dashboardEmail">
+                    <span id="sidebarEmail">
 
                         admin@stackly.com
 
@@ -371,17 +371,11 @@
                     Administrator Panel
 
                 </span>
-
                 <h1>
-
                     Good Morning,
-
-                    <span>
-
+                    <span id="heroEmail">
                         Admin
-
                     </span>
-
                 </h1>
 
                 <p>
@@ -440,7 +434,7 @@
 
                         <h2 id="balanceCounter">
 
-                            $1,284,520
+                            $1,284
 
                         </h2>
 
@@ -2111,29 +2105,27 @@ once:true
 
 
 const userEmail = localStorage.getItem("userEmail");
-
 const userRole = localStorage.getItem("userRole");
 
 if (!userRole || userRole.toLowerCase() !== "admin") {
-
     window.location.href = "login.html";
-
 }
 
-const dashboardEmail = document.getElementById("dashboardEmail");
-
+const heroEmail = document.getElementById("heroEmail");
+const sidebarEmail = document.getElementById("sidebarEmail");
 const dashboardRole = document.getElementById("dashboardRole");
 
-if (dashboardEmail) {
+if (heroEmail) {
+    heroEmail.textContent = userEmail;
+}
 
-    dashboardEmail.textContent = userEmail || "admin@stackly.com";
-
+if (sidebarEmail) {
+    sidebarEmail.textContent = userEmail;
 }
 
 if (dashboardRole) {
-
-    dashboardRole.textContent = userRole || "Admin";
-
+    dashboardRole.textContent =
+        userRole.charAt(0).toUpperCase() + userRole.slice(1);
 }
 
 
@@ -2257,7 +2249,7 @@ function counter(id, target, prefix = "") {
 
 }
 
-counter("revenueCounter", 1284520, "$");
+counter("revenueCounter", 1284, "$");
 
 counter("usersCounter", 12548);
 
@@ -2265,9 +2257,9 @@ counter("accountCounter", 10980);
 
 counter("pendingCounter", 18);
 
-counter("balanceCounter", 1284520, "$");
+counter("balanceCounter", 1284, "$");
 
-counter("totalRevenue", 1284520, "$");
+counter("totalRevenue", 1284, "$");
 
 
 
