@@ -1582,7 +1582,7 @@ font-size:24px;
     background:#f8fbff;
 
     overflow:hidden;
-    margin-top: -70px;
+    margin-top: -100px;
 
 }
 
@@ -2067,7 +2067,7 @@ font-size:24px;
     background:#ffffff;
 
     overflow:hidden;
-    margin-top: -70px;
+    margin-top: -100px;
 
 }
 
@@ -2527,6 +2527,7 @@ font-size:24px;
     background:#f8fbff;
 
     overflow:hidden;
+    margin-top: -70px;
 
 }
 
@@ -2986,7 +2987,7 @@ font-size:24px;
     background:#f8fbff;
 
     overflow:hidden;
-    margin-top: -70px;
+    margin-top: -100px;
 
 }
 
@@ -3707,7 +3708,7 @@ font-size:24px;
 
     padding:90px 0 25px;
 
-    margin-top:100px;
+    margin-top:-5px;
 
     border-radius:60px 60px 0 0;
 
