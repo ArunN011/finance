@@ -4749,6 +4749,8 @@ padding:14px;
     background:linear-gradient(180deg,#ffffff 0%,#F7FFF9 100%);
 
     overflow:hidden;
+    margin-top: -60px;
+    
 
 }
 
@@ -5153,6 +5155,7 @@ padding:14px;
     padding: 120px 0;
     background: linear-gradient(180deg,#f8fffb 0%,#ffffff 100%);
     overflow: hidden;
+    margin-top: -90px;
 }
 
 .fin-features-section::before{
@@ -5477,6 +5480,7 @@ padding:14px;
     padding:120px 0;
     background:linear-gradient(180deg,#ffffff 0%,#f8fffb 100%);
     overflow:hidden;
+    margin-top: -90px;
 }
 
 .workflow-section::before{
@@ -5821,6 +5825,7 @@ padding:14px;
     padding:130px 0;
     background:linear-gradient(180deg,#F8FFFB 0%,#FFFFFF 100%);
     overflow:hidden;
+    margin-top: -90px;
 }
 
 .pricing3d-section::before{
@@ -6430,7 +6435,7 @@ padding:14px;
 
     padding:90px 0 25px;
 
-    margin-top:120px;
+    margin-top:5px;
 
     border-radius:60px 60px 0 0;
 
@@ -6448,6 +6453,7 @@ padding:14px;
     background-repeat:no-repeat;
 
     color:#fff;
+
 
 }
 
