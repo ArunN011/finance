@@ -1669,6 +1669,7 @@ transform:translateY(0);
     padding:120px 0;
     background:#f8fbff;
     overflow:hidden;
+    margin-top: -80px;
 }
 
 .featured-blog::before{
@@ -2509,7 +2510,7 @@ transform:translateY(0);
     background:#ffffff;
 
     overflow:hidden;
-    margin-top: -80px;
+    margin-top: -100px;
 
 }
 
@@ -2850,7 +2851,7 @@ opacity:0;
 
     padding:90px 0 25px;
 
-    margin-top:120px;
+    margin-top:-10px;
 
     border-radius:60px 60px 0 0;
 
